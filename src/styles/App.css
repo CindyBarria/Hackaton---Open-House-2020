@@ -1,12 +1,20 @@
 p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "apex sans";
+  font-weight: bold;
 }
 @font-face {
-  font-family: "clarendon";
+  font-family: "clarendon regular";
   src: url("../assets/Clarendon-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "apex sans";
+  src: url("../assets/ApexSansBook.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
-  font-family: "clarendon";
+  font-family: "clarendon regular";
 }
