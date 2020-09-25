@@ -1,0 +1,12 @@
+p {
+  font-family: "Open Sans", sans-serif;
+}
+@font-face {
+  font-family: "clarendon";
+  src: url("../assets/Clarendon-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "clarendon";
+}

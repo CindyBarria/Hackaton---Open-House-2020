@@ -4,6 +4,7 @@ import Category from "./filters/Category";
 import Home from "./Home";
 import Preparation from "./Preparation";
 import Recipes from "./Recipes";
+import "../styles/App.css";
 
 const App = () => {
   return (
