@@ -9,7 +9,7 @@
         "time": "40 min.",
         "portions": "4 personas",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/cNzfy16/empanadadepino.jpg"
       },
       {
         "id": "2",
@@ -20,7 +20,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/xJGdgkM/empanadas-de-queso.png"
       },
       {
         "id": "3",
@@ -31,7 +31,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/fQmmRhn/Botana-adobada.png"
       }
       
     ],
@@ -46,7 +46,7 @@
         "time": "45 Minutos.",
         "portions": "4 personas",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/mN5FPZc/brownie.jpg"
       },
       {
         "id": "5",
@@ -57,7 +57,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/jG7wMLM/budindepan.jpg"
       }
       
     ],
@@ -71,7 +71,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/dDcv3pL/Crepes-o-panqueques-celestinos-Postres-Irene-Mercadal.jpg"
       },
       {
         "id": "7",
@@ -82,7 +82,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/1nFnJPT/Galletas-caseras-de-Navidad-Peque-Recetas.png"
       },
       {
         "id": "8",
@@ -93,7 +93,7 @@
         "time": "60 minutos",
         "portions": "4 personas",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/V3hhZbY/F-cil-Pastel-De-Leche-Asada-Para-Cenas-Esp-ntaneas.jpg"
       },
       {
         "id": "9",
@@ -104,18 +104,18 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/tMVXqZH/Barritas-de-cereal-caseras-de-avena-y-pl-tano.png"
       },
       {
         "id": "10",
-        "name": "Semola con leche sin lactosa y berries",
+        "name": "Sémola con leche sin lactosa y berries",
         "ingredients": [""],
         "preparation": "",
         "difficulty": "",
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/G5tzLwN/SEMOLA-CON-LECHE-Y-BERRIES-SIN-LACTOSA.jpg"
       }
       
     ],
@@ -129,18 +129,18 @@
         "time": "90 minutos",
         "portions": "4 personas",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/y42G4dt/Pan-amasado-En-Mi-Cocina-Hoy.jpg"
       },
       {
         "id": "12",
-        "name": " Ensalada de brocoli y nueces",
+        "name": " Ensalada de brócoli y nueces",
         "ingredients": [""],
         "preparation": "",
         "difficulty": "",
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/d2ztxWN/F-CIL-Y-ADICTIVO-ENSALADA-TIBIA-DE-BR-COLI-AJO-Y-NUECES.jpg"
       }
       
     ],
@@ -154,7 +154,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/QchNTG5/Harira-sopa-de-lentejas-especiada-marroqu-En-Mi-Cocina-Hoy.jpg"
       },
       {
         "id": "14",
@@ -165,7 +165,7 @@
         "time": "30 minutos",
         "portions": "4 personas",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/rkSmSdZ/Hornea-este-pastel-de-coliflor-con-jam-n-y-queso-te-va-a-encantar.png" 
       },
       {
         "id": "15",
@@ -176,7 +176,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/0sJ7PPz/veggieburger.jpg"
       },
       {
         "id": "16",
@@ -187,7 +187,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/88hnmpj/Brocheta-de-champi-ones-Cocinando-con-Neus.png"
       },
       {
         "id": "17",
@@ -198,7 +198,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/NxCWhLL/Recetas-con-espinacas-irresistibles-y-f-ciles-de-hacer.jpg"
       }
       
     ],
@@ -212,7 +212,7 @@
         "time": "",
         "portions": "",
         "nutrititional": "",
-        "img": ""
+        "img": "https://i.ibb.co/G57Mbx2/Receta-de-gazpacho-andaluz-tradicional.png"
       }
 
     ]
