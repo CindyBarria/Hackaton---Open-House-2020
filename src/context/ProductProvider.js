@@ -1,53 +1,35 @@
-import { getAllByAltText } from "@testing-library/react";
 import React from "react";
-import data from "../components/data/product.json";
+import recetas from "../components/data/product.js";
 
 export const ProductContext = React.createContext();
 
 const ProductProvider = (props) => {
-  const [dataAll, setDataAll] = React.useState([]);
-  /*   const [chilena, setChilena] = React.useState([]); */
-  const [filterChilena, setFilterChilena] = React.useState([]);
-  /*   const [vegetariana, setVegetariana] = React.useState([]); */
+  //hooks ---------------------------------------------
+  const [todasRecetas, setRecetas] = React.useState([]);
+  const [filter, setFilter] = React.useState("all");
 
+  //useEffect ---------------------------------------------
   React.useEffect(() => {
-    /*    getProduct(); */
-    filterProduct();
+    setRecetas(recetas);
   }, []);
 
-  /*   const getProduct = async () => {
-    try {
-      const chilean = data.cocinaChilena;
-      const vegetariana = data.vegetariana;
-      setChilena(chilean);
-      setVegetariana(vegetariana);
-    } catch (error) {
-      console.log(error);
-    }
-  }; */
-  const filterProduct = () => {
-    try {
-      console.log("hola soy filtro");
+  React.useEffect(() => {
+    setRecetas([]);
 
-      const arrayData = data;
-      const arrayChilena = arrayData.filter(
-        (arrayData) => arrayData.category === "cocinaChilena"
-      );
-      console.log(arrayData, "data");
-      setDataAll(arrayData);
-      setFilterChilena(arrayChilena);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+    const filtered = recetas.map((p) => ({
+      ...p,
+      filtered: p.category.includes(filter),
+    }));
+
+    setRecetas(filtered);
+  }, [filter]);
+
   return (
     <ProductContext.Provider
       value={{
-        dataAll,
-        /*         setDataAll,
-        chilena,
-        vegetariana, */
-        filterChilena,
+        setFilter,
+        filter,
+        todasRecetas,
       }}
     >
       {props.children}
