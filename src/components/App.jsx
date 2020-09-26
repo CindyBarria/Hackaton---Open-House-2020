@@ -5,6 +5,7 @@ import Home from "./Home";
 import Preparation from "./Preparation";
 import Recipes from "./Recipes";
 import "../styles/App.css";
+import ProductProvider from "../context/ProductProvider";
 
 const App = () => {
   return (
@@ -14,10 +15,14 @@ const App = () => {
           <Home />
         </Route>
         <Route path="/category">
-          <Category />
+          <ProductProvider>
+            <Category />
+          </ProductProvider>
         </Route>
         <Route path="/recipes">
-          <Recipes />
+          <ProductProvider>
+            <Recipes />
+          </ProductProvider>
         </Route>
         <Route path="/preparation">
           <Preparation />
