@@ -18,7 +18,7 @@ const recetas = [
     time: "40 min.",
     portions: "4 personas",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/cNzfy16/empanadadepino.jpg",
     category: ["cocinaChilena"],
   },
   {
@@ -30,7 +30,7 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/xJGdgkM/empanadas-de-queso.png",
     category: ["cocinaChilena"],
   },
   {
@@ -42,7 +42,7 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/fQmmRhn/Botana-adobada.png",
     category: ["cocinaChilena"],
   },
   {
@@ -61,7 +61,7 @@ const recetas = [
     time: "45 Minutos.",
     portions: "4 personas",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/mN5FPZc/brownie.jpg",
     category: ["cocinaParaNiños"],
   },
   {
@@ -73,7 +73,7 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/jG7wMLM/budindepan.jpg",
     category: ["cocinaParaNiños"],
   },
   {
@@ -85,7 +85,8 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/dDcv3pL/Crepes-o-panqueques-celestinos-Postres-Irene-Mercadal.jpg",
     category: ["postresYDulces"],
   },
   {
@@ -97,7 +98,8 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/1nFnJPT/Galletas-caseras-de-Navidad-Peque-Recetas.png",
     category: ["postresYDulces"],
   },
   {
@@ -116,7 +118,8 @@ const recetas = [
     time: "60 minutos",
     portions: "4 personas",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/V3hhZbY/F-cil-Pastel-De-Leche-Asada-Para-Cenas-Esp-ntaneas.jpg",
     category: ["postresYDulces"],
   },
   {
@@ -128,7 +131,8 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/tMVXqZH/Barritas-de-cereal-caseras-de-avena-y-pl-tano.png",
     category: ["postresYDulces"],
   },
   {
@@ -140,7 +144,7 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/G5tzLwN/SEMOLA-CON-LECHE-Y-BERRIES-SIN-LACTOSA.jpg",
     category: ["postresYDulces"],
   },
   {
@@ -159,7 +163,7 @@ const recetas = [
     time: "90 minutos",
     portions: "4 personas",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/y42G4dt/Pan-amasado-En-Mi-Cocina-Hoy.jpg",
     category: ["acompañamientos"],
   },
   {
@@ -171,7 +175,8 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/d2ztxWN/F-CIL-Y-ADICTIVO-ENSALADA-TIBIA-DE-BR-COLI-AJO-Y-NUECES.jpg",
     category: ["acompañamientos"],
   },
   {
@@ -183,7 +188,8 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/QchNTG5/Harira-sopa-de-lentejas-especiada-marroqu-En-Mi-Cocina-Hoy.jpg",
     category: ["platosDeFondo"],
   },
   {
@@ -203,7 +209,8 @@ const recetas = [
     time: "30 minutos",
     portions: "4 personas",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/rkSmSdZ/Hornea-este-pastel-de-coliflor-con-jam-n-y-queso-te-va-a-encantar.png",
     category: ["platosDeFondo"],
   },
   {
@@ -215,7 +222,7 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/0sJ7PPz/veggieburger.jpg",
     category: ["platosDeFondo"],
   },
   {
@@ -227,7 +234,8 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/88hnmpj/Brocheta-de-champi-ones-Cocinando-con-Neus.png",
     category: ["platosDeFondo"],
   },
   {
@@ -239,7 +247,8 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img:
+      "https://i.ibb.co/NxCWhLL/Recetas-con-espinacas-irresistibles-y-f-ciles-de-hacer.jpg",
     category: ["platosDeFondo"],
   },
   {
@@ -251,7 +260,7 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "",
+    img: "https://i.ibb.co/G57Mbx2/Receta-de-gazpacho-andaluz-tradicional.png",
     category: ["sopasYCremas"],
   },
 ];
