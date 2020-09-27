@@ -7,11 +7,12 @@ const ProductProvider = (props) => {
   //hooks ---------------------------------------------
   const [todasRecetas, setRecetas] = React.useState([]);
   const [filter, setFilter] = React.useState("all");
+  const [filterDiet, setFilterDiet] = React.useState("");
 
   //useEffect ---------------------------------------------
   React.useEffect(() => {
     setRecetas(recetas);
-  }, []);
+  }, []); 
 
   React.useEffect(() => {
     setRecetas([]);
@@ -21,8 +22,20 @@ const ProductProvider = (props) => {
       filtered: p.category.includes(filter),
     }));
 
-    setRecetas(filtered);
+    setRecetas(filtered);    
   }, [filter]);
+  
+
+  React.useEffect(() => {
+    setRecetas([...recetas])
+    
+    const filteredDiet = recetas.map((p) => ({
+      ...p,
+      filteredD: p.diet.includes(filterDiet),
+    }));
+
+    setRecetas(filteredDiet);
+  }, [filterDiet]);
 
   return (
     <ProductContext.Provider
@@ -30,6 +43,9 @@ const ProductProvider = (props) => {
         setFilter,
         filter,
         todasRecetas,
+        filterDiet,
+        setFilterDiet,
+        
       }}
     >
       {props.children}

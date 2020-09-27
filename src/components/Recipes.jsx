@@ -14,17 +14,32 @@ const Recipes = () => {
 
       {todasRecetas.map((product) =>
         product.filtered === true ? (
-          <button>
-            <div className="productCard" key={product.id}>
+          <button key={product.id}>
+            <div className="productCard" >
               <p className="card-name">{product.name}</p>
             </div>
           </button>
+        ) : 
+         product.filteredD === true ? (
+          <button key={product.id}>
+            <div className="productCard" >
+              <p className="card-name">{product.name}</p>
+            </div>
+          </button>
+
         ) : (
           ""
         )
       )}
+
+
+
     </div>
   );
 };
 
 export default Recipes;
+
+
+
+
