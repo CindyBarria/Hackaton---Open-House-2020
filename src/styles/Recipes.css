@@ -1,0 +1,77 @@
+/* vista recipes */
+.container-recipes {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+}
+/* carta con imagen, boton y texto */
+.productCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0% 12% 0%;
+}
+.button-card {
+  background: none;
+  border: none;
+}
+.img-recipes {
+  width: 85%;
+  height: 40vh;
+  border-radius: 13%;
+}
+
+.recipes-name {
+  background: #ce7da6;
+  width: 85%;
+  margin-top: -16%;
+  height: 9vh;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.title-recipes,
+.title-recipesTwo {
+  color: #ce7da6;
+  text-align: center;
+  margin: 9% 0% 0% 0%;
+}
+/* boton para personalizar receta */
+.button-find {
+  background: none;
+  border: 4px solid #c5c6c7;
+  width: 76%;
+  height: 10vh;
+  border-radius: 45px;
+  margin-left: 10%;
+  font-family: "clarendon regular";
+  font-size: 16px;
+}
+.text {
+  text-align: center;
+  color: #5a5a5a;
+  padding: 21px;
+}
+/* boton volver */
+.back {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: space-around;
+  align-items: center;
+}
+.arrow {
+  margin-left: 17%;
+  margin-top: 5px;
+}
+.container-text {
+  margin-top: -19%;
+}
