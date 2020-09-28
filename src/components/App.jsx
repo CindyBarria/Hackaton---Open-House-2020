@@ -8,6 +8,8 @@ import "../styles/App.css";
 import ProductProvider from "../context/ProductProvider";
 import MenuHeader from "../assets/Menu.png";
 import Footer from "../assets/footer.png";
+import SpecificDiet from "../components/filters/SpecificDiet";
+import ButtonFindHere from "./ButtonFindHere";
 
 const App = () => {
   return (
@@ -25,6 +27,13 @@ const App = () => {
           </Route>
           <Route path="/recipes">
             <ProductProvider>
+              <ButtonFindHere />
+              <Recipes />
+            </ProductProvider>
+          </Route>
+          <Route path="/diet">
+            <ProductProvider>
+              <SpecificDiet />
               <Recipes />
             </ProductProvider>
           </Route>

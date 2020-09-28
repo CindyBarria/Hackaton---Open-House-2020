@@ -5,7 +5,7 @@ import { ProductContext } from "../../context/ProductProvider";
 
 const Category = () => {
   const { filter, setFilter } = React.useContext(ProductContext);
-  console.log(setFilter);
+
   return (
     <div>
       <h1>Categorias</h1>

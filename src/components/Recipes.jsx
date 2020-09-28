@@ -23,27 +23,24 @@ const Recipes = () => {
       </p>
       {todasRecetas.map((product) =>
         product.filtered === true ? (
-          <h1 className="title-recipes">{product.title}</h1>
+          <h1 className="title-recipes" key={product.id}>
+            {product.title}
+          </h1>
         ) : (
           ""
         )
       )}
       ;
       <div className="container-text">
-        <p className="text">
-          Encuentra el menú perfecto según tus preferencias y necesidades
-        </p>
-        <button className="button-find">Encontrar Aquí</button>
         <h1 className="title-recipesTwo">Recetas</h1>
       </div>
       {todasRecetas.map((product) =>
         product.filtered === true ? (
-
           <main>
             <button
               className="button-card"
               onClick={() => clickProduct(product)}
-               key={product.id}
+              key={product.id}
             >
               <Link to="/preparation" style={{ textDecoration: "none" }}>
                 <div className="productCard">
@@ -55,10 +52,11 @@ const Recipes = () => {
           </main>
         ) : product.filteredD === true ? (
           <button key={product.id}>
-            <div className="productCard" >
+            <div className="productCard">
               <p className="card-name">{product.name}</p>
             </div>
-          </button> ):(
+          </button>
+        ) : (
           ""
         )
       )}
@@ -70,7 +68,3 @@ const Recipes = () => {
 };
 
 export default Recipes;
-
-
-
-
