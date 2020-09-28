@@ -2,35 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Recipes.css";
 import { ProductContext } from "../context/ProductProvider";
-//import bannerSuperior from "../assets/BannerSuperior.png";
 import bannerInferior from "../assets/BannerInferior.png";
-//import flecha from "../assets/Vector.png";
 
 const Recipes = () => {
   const { todasRecetas, clickProduct } = React.useContext(ProductContext);
 
   return (
     <div className="container-recipes">
-      {/* <img src={bannerSuperior} alt="" style={{ marginTop: "-4px" }} />
-      <p className="back">
-        <img src={flecha} alt="" className="arrow" />
-        <Link
-          to="/category"
-          style={{ color: "#0093AD", textDecoration: "none" }}
-        >
-          Volver
-        </Link>
-      </p> */}
-      {/* {todasRecetas.map((product) =>
-        product.filtered === true ? (
-          <h1 className="title-recipes" key={product.id}>
-            {product.title}
-          </h1>
-        ) : (
-          ""
-        )
-      )} */}
-      
       <div className="container-text">
         <h1 className="title-recipesTwo">Recetas</h1>
       </div>
@@ -40,7 +18,6 @@ const Recipes = () => {
             <button
               className="button-card"
               onClick={() => clickProduct(product)}
-              
             >
               <Link to="/preparation" style={{ textDecoration: "none" }}>
                 <div className="productCard">

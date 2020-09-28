@@ -37,7 +37,6 @@ const App = () => {
           </Route>
           <Route path="/diet">
             <ProductProvider>
-              
               <RecipesCategoryTitle />
               <SpecificDiet />
               <Recipes />
