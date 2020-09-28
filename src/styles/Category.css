@@ -1,0 +1,75 @@
+/* vista categorias */
+
+.leadTittle{
+  color: #0093AD;
+  text-align: center;
+  font-size: 35px;
+  margin: 9% 0% 0% 0%;
+}
+
+.categoryTittle{
+  color: #525759;
+  text-align: center;
+  font-size: 25px;
+  font-family: "clarendon regular";
+}
+
+.categoryButtons{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+    .chileanCuisine{
+        background-image:url(../assets/Categoria-1.png);
+        background-repeat:no-repeat;
+        width: 69%;
+        height: 27vh;
+        border-radius: 13%;  
+    }
+
+    .kidsCuisine{
+        background-image:url(../assets/Categoria-2.png);
+        background-repeat:no-repeat;
+        width: 69%;
+        height: 27vh;
+        border-radius: 13%;
+        text-decoration: none;
+    }
+
+    .dessertsSweets{
+        background-image:url(../assets/Categoria-3.png);
+        background-repeat:no-repeat;
+        width: 69%;
+        height: 27vh;
+        border-radius: 13%;
+        text-decoration: none;
+    }
+
+    .sides{
+        background-image:url(../assets/Categoria-4.png);
+        background-repeat:no-repeat;
+        width: 69%;
+        height: 27vh;
+        border-radius: 13%;
+        text-decoration: none;
+    }
+
+    .backgroundDishes{
+        background-image:url(../assets/Categoria-5.png);
+        background-repeat:no-repeat;
+        width: 69%;
+        height: 27vh;
+        border-radius: 13%;
+    }
+
+    .creamsSoups{
+        background-image:url(../assets/Categoria-6.png);
+        background-repeat:no-repeat;
+        width: 69%;
+        height: 27vh;
+        border-radius: 13%;
+
+    }
