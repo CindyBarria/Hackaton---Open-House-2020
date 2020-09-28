@@ -76,7 +76,7 @@ const recetas = [
   },
   {
     id: "5",
-    title: "",
+    title: "Cocina para niños",
     name: "Colegial",
     ingredients: [""],
     preparation: "",
@@ -85,7 +85,7 @@ const recetas = [
     portions: "",
     nutrititional: "",
     img: "https://i.ibb.co/Wz8Pwz2/budindepan-2.jpg",
-    category: ["cocinaParaNiños", "postresYDulces"],
+    category: ["cocinaParaNiños"],
     diet: [],
 
   },
@@ -215,7 +215,7 @@ const recetas = [
   },
   {
     id: "13",
-    title: "Platos de Fondo",
+    title: "",
     name: "Guiso de lentejas",
     ingredients: [""],
     preparation: "",
@@ -230,7 +230,7 @@ const recetas = [
   },
   {
     id: "14",
-    title: "",
+    title: "Platos de Fondo",
     name: "Pastel de coliflor y champiñón al horno",
     ingredients: [
       "Coliflor bandeja 1 un.",
