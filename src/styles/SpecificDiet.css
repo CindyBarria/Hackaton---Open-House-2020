@@ -28,8 +28,8 @@
 }
 
 .btn-filter {
-    width: 306px;
-    height: 69px;
+    width: 265px;
+    height: 68px;
     background: #FFFFFF;
     border: 4px solid #C5C6C7;
     box-sizing: border-box;
@@ -42,7 +42,19 @@
     line-height: 17px;
     color: #525759;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
+.btn-filter img {
+    width: 30px;
+    margin: 0 10px;
+    
+}
+img.gluten-free-icon {
+    width: 20px;
 }
 
 a.diet-name {
@@ -72,6 +84,9 @@ a.diet-name {
     border: 2px solid #0093AD;
     box-sizing: border-box;
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .btn-back a {
@@ -79,13 +94,8 @@ a.diet-name {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     color: #0093AD;
     text-decoration: none;
-
 }
 
 .btn-next {
@@ -95,16 +105,14 @@ a.diet-name {
     border: 2px solid #0093AD;
     box-sizing: border-box;
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
 }
 .btn-next a {
     font-family: "apex sans" ;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 29px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
     color: #FFFFFF;
     text-decoration: none;
 }

@@ -2,6 +2,9 @@ import React from "react";
 import "../../styles/SpecificDiet.css";
 import { ProductContext } from "../../context/ProductProvider";
 import { Link } from "react-router-dom";
+import VegetarianIcon from '../../assets/Vegetariana.png';
+import VeganIcon from '../../assets/Shape.png';
+import GlutenFreeIcon from '../../assets/Sin-Gluten.png';
 
 const SpecificDiet = () => {
 
@@ -19,7 +22,7 @@ const SpecificDiet = () => {
       className="btn-filter"
       active={filterDiet ? "vegetariana" : undefined}
       onClick={() => setFilterDiet("vegetariana")}
-      > VEGETARIANA
+      > <span><img src={VegetarianIcon} alt="Icono vegetariano"/></span>  VEGETARIANA
       {/* <Link to="/recipes" className="diet-name">VEGETARIANA</Link> */}
       </button>
 
@@ -27,7 +30,7 @@ const SpecificDiet = () => {
       className="btn-filter"
       active={filterDiet ? "vegana" : undefined}
       onClick={() => setFilterDiet("vegana")}
-      > VEGANA
+      > <span><img src={VeganIcon} alt="Icono vegano"/></span> VEGANA
       {/* <Link to="/recipes" className="diet-name">VEGANA</Link> */}
       </button>
 
@@ -35,7 +38,7 @@ const SpecificDiet = () => {
       className="btn-filter"
       active={filterDiet ? "sinGluten" : undefined}
       onClick={() => setFilterDiet("sinGluten")}
-      > SIN GLUTEN
+      > <span><img src={GlutenFreeIcon} alt="Icono sin gluten" className="gluten-free-icon"/></span> SIN GLUTEN
       {/* <Link to="/recipes" className="diet-name">SIN GLUTEN</Link> */}
       </button>
 
@@ -43,7 +46,7 @@ const SpecificDiet = () => {
 
       <div className="container-btn-bn">
         <button className="btn-back">
-          <Link to="/category">Atrás</Link>
+          <Link to="/recipes">Atrás</Link>
           
         </button>
 

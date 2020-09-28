@@ -38,26 +38,63 @@
   font-size: 18px;
   letter-spacing: 1px;
 }
-.title-recipes,
-.title-recipesTwo {
+.title-recipes {
   color: #ce7da6;
+  font-style: normal;
+  font-size: 28px;
   text-align: center;
   margin: 9% 0% 0% 0%;
+  text-transform: uppercase; 
 }
-/* boton para personalizar receta */
-.button-find {
-  background: none;
-  border: 4px solid #c5c6c7;
-  width: 76%;
-  height: 10vh;
-  border-radius: 45px;
-  margin-left: 10%;
-  font-family: "clarendon regular";
-  font-size: 16px;
-}
-.text {
+.title-recipesTwo {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
   text-align: center;
-  color: #5a5a5a;
+  color: #CE7DA6;
+  /* margin: 6% 0% 0% 0%; */
+  padding: 2%;
+  text-transform: uppercase; 
+}
+
+/* boton para personalizar receta */
+.container-button-find {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.button-find {
+  background: #FFFFFF;
+  border: 4px solid #c5c6c7;
+  box-sizing: border-box;
+  width: 265px; /* 75%;*/
+  height: 69px; /* 10vh; */
+  border-radius: 100px;
+ 
+}
+.button-find a {
+  text-decoration: none;
+  font-family: "clarendon regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #525759;
+}
+/* texto para personalizar receta */
+.text {
+  font-family: "apex sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
   padding: 21px;
 }
 /* boton volver */
@@ -72,6 +109,14 @@
   margin-left: 17%;
   margin-top: 5px;
 }
+.back-text {
+  font-family: "apex sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  color: #0093AD;
+}
 .container-text {
-  margin-top: -19%;
+  margin: 5% 0;
 }

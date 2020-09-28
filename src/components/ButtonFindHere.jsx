@@ -1,9 +1,10 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import "../styles/Recipes.css";
 
 function ButtonFindHere() {
   return (
-    <Fragment>
+    <div className="container-button-find">
       <p className="text">
         Encuentra el menú perfecto según tus preferencias y necesidades
       </p>
@@ -11,7 +12,7 @@ function ButtonFindHere() {
         {" "}
         <Link to="/diet">Encontrar Aquí</Link>
       </button>
-    </Fragment>
+    </div>
   );
 }
 
