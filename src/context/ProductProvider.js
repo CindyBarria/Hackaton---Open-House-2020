@@ -8,6 +8,8 @@ const ProductProvider = (props) => {
   const [todasRecetas, setRecetas] = React.useState([]);
   const [filter, setFilter] = React.useState("all");
   const [filterDiet, setFilterDiet] = React.useState("");
+  const [preparacion, setPreparacion] = React.useState([]);
+
 
   //useEffect ---------------------------------------------
   React.useEffect(() => {
@@ -24,8 +26,8 @@ const ProductProvider = (props) => {
 
     setRecetas(filtered);    
   }, [filter]);
-  
 
+  
   React.useEffect(() => {
     setRecetas([...recetas])
     
@@ -37,6 +39,23 @@ const ProductProvider = (props) => {
     setRecetas(filteredDiet);
   }, [filterDiet]);
 
+  const clickProduct = (product) => {
+    let receta = {
+      id: product.id,
+      name: product.name,
+      img: product.img,
+      ingredients: product.ingredients,
+      preparation: product.preparation,
+      difficulty: product.difficulty,
+      time: product.time,
+      portions: product.portions,
+      nutrititional: product.nutrititional,
+    };
+
+    setPreparacion([...preparacion, receta]);
+  };
+
+
   return (
     <ProductContext.Provider
       value={{
@@ -45,7 +64,10 @@ const ProductProvider = (props) => {
         todasRecetas,
         filterDiet,
         setFilterDiet,
-        
+        clickProduct,
+        preparacion,
+        setPreparacion,
+
       }}
     >
       {props.children}

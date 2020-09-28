@@ -1,6 +1,7 @@
 const recetas = [
   {
     id: "1",
+    title: "Cocina Chilena",
     name: "Empanada fritas de pino",
     ingredients: [
       "500 gr Carne molida de vacuno",
@@ -24,6 +25,7 @@ const recetas = [
   },
   {
     id: "2",
+    title: "",
     name: "Empanadas fritas de queso",
     ingredients: [""],
     preparation: "",
@@ -37,6 +39,7 @@ const recetas = [
   },
   {
     id: "3",
+    title: "",
     name: "Tomates rellenos",
     ingredients: [""],
     preparation: "",
@@ -50,6 +53,7 @@ const recetas = [
   },
   {
     id: "4",
+    title: "",
     name: "Brownie de banana",
     ingredients: [
       "Plátano 2 un",
@@ -64,12 +68,15 @@ const recetas = [
     time: "45 Minutos.",
     portions: "4 personas",
     nutrititional: "",
-    img: "https://i.ibb.co/mN5FPZc/brownie.jpg",
-    category: ["cocinaParaNiños"],
+    img:
+      "https://i.ibb.co/ySmSfHm/Fresh-Homemade-Chocolate-Brownie-against-a-background.jpg",
+    category: ["cocinaParaNiños", "postresYDulces"],
     diet: [],
+
   },
   {
     id: "5",
+    title: "",
     name: "Colegial",
     ingredients: [""],
     preparation: "",
@@ -77,12 +84,14 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "https://i.ibb.co/jG7wMLM/budindepan.jpg",
-    category: ["cocinaParaNiños"],
+    img: "https://i.ibb.co/Wz8Pwz2/budindepan-2.jpg",
+    category: ["cocinaParaNiños", "postresYDulces"],
     diet: [],
+
   },
   {
     id: "6",
+    title: "Postres & Dulces",
     name: "Panqueque con manjar",
     ingredients: [""],
     preparation: "",
@@ -91,12 +100,13 @@ const recetas = [
     portions: "",
     nutrititional: "",
     img:
-      "https://i.ibb.co/dDcv3pL/Crepes-o-panqueques-celestinos-Postres-Irene-Mercadal.jpg",
+      "https://i.ibb.co/gV38Sh7/panqueques-con-dulce-de-leche-filloas-dulces-60517-orig.jpg",
     category: ["postresYDulces"],
     diet: [],
   },
   {
     id: "7",
+    title: "",
     name: "Galletas de navidad",
     ingredients: [""],
     preparation: "",
@@ -104,13 +114,13 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img:
-      "https://i.ibb.co/1nFnJPT/Galletas-caseras-de-Navidad-Peque-Recetas.png",
+    img: "https://i.ibb.co/2W8JHBS/Christmas-Cookies-Sugar-Cookies-7.jpg",
     category: ["postresYDulces"],
     diet: [],
   },
   {
     id: "8",
+    title: "",
     name: "Leche asada",
     ingredients: [
       "Leche sin lactosa Colun 1 lt",
@@ -126,12 +136,13 @@ const recetas = [
     portions: "4 personas",
     nutrititional: "",
     img:
-      "https://i.ibb.co/V3hhZbY/F-cil-Pastel-De-Leche-Asada-Para-Cenas-Esp-ntaneas.jpg",
+      "https://i.ibb.co/y5s6KTm/recetas-82c0351d357aef84fedf1d7dc5cbbd48.jpg",
     category: ["postresYDulces"],
     diet: [],
   },
   {
     id: "9",
+    title: "",
     name: "Barra de cereal",
     ingredients: [""],
     preparation: "",
@@ -146,6 +157,7 @@ const recetas = [
   },
   {
     id: "10",
+    title: "",
     name: "Semola con leche sin lactosa y berries",
     ingredients: [""],
     preparation: "",
@@ -153,12 +165,13 @@ const recetas = [
     time: "",
     portions: "",
     nutrititional: "",
-    img: "https://i.ibb.co/G5tzLwN/SEMOLA-CON-LECHE-Y-BERRIES-SIN-LACTOSA.jpg",
+    img: "https://i.ibb.co/jDrfSny/semola.jpg",
     category: ["postresYDulces"],
     diet: ["sinGluten"],
   },
   {
     id: "11",
+    title: "Acompañamientos",
     name: "Pan amasado",
     ingredients: [
       "Harina 1 kg",
@@ -179,6 +192,7 @@ const recetas = [
   },
   {
     id: "12",
+    title: "",
     name: " Ensalada de brocoli y nueces",
     ingredients: [
       "Hierbas a gusto",
@@ -201,6 +215,7 @@ const recetas = [
   },
   {
     id: "13",
+    title: "Platos de Fondo",
     name: "Guiso de lentejas",
     ingredients: [""],
     preparation: "",
@@ -215,6 +230,7 @@ const recetas = [
   },
   {
     id: "14",
+    title: "",
     name: "Pastel de coliflor y champiñón al horno",
     ingredients: [
       "Coliflor bandeja 1 un.",
@@ -237,6 +253,7 @@ const recetas = [
   },
   {
     id: "15",
+    title: "",
     name: "Veggie burger",
     ingredients: [""],
     preparation: "",
@@ -250,6 +267,7 @@ const recetas = [
   },
   {
     id: "16",
+    title: "",
     name: "Brochetas de champiñón",
     ingredients: [""],
     preparation: "",
@@ -264,6 +282,7 @@ const recetas = [
   },
   {
     id: "17",
+    title: "",
     name: "Crepes de verduras",
     ingredients: [""],
     preparation: "",
@@ -278,6 +297,7 @@ const recetas = [
   },
   {
     id: "18",
+    title: "Sopas & Cremas",
     name: "Gazpachio",
     ingredients: [""],
     preparation: "",
