@@ -11,25 +11,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3% 0% 12% 0%;
+  margin: 3% 0% 10% 0%;
+  position: relative;
+}
+
+img.heart {
+  position: absolute;
+  left: 270px;
+  top: 15px;
+  z-index: 3;
 }
 .button-card {
   background: none;
   border: none;
 }
 .img-recipes {
-  width: 85%;
-  height: 40vh;
-  border-radius: 13%;
+  width: 80%;
+  max-width: 500px;
+  height: 35vh;
+  border-radius: 20px;
 }
 
 .recipes-name {
   background: #ce7da6;
-  width: 85%;
-  margin-top: -16%;
-  height: 9vh;
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
+  width: 80%;
+  margin-top: -14%;
+  height: 8vh;
   color: white;
   text-align: center;
   display: flex;
@@ -37,6 +44,44 @@
   align-items: center;
   font-size: 18px;
   letter-spacing: 1px;
+}
+/*información de dificultad y tiempo por receta*/
+.container-extra-info {
+  width: 80%;
+  height: 45px;
+  display: flex;
+  justify-content: space-evenly;
+  background: #525759;
+  border-radius: 0px 0px 20px 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.difficulty-info {
+  display: flex;
+  width: 45%;
+  height: auto;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.difficulty-info img {
+  width: 28px;
+  margin-right: 10px;
+}
+p.time-info {
+  font-family: "clarendon regular";
+  width: 45%;
+  height: auto;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+span.span-minuts {
+  font-family: "apex sans";
 }
 .title-recipes {
   color: #ce7da6;
@@ -52,7 +97,6 @@
   font-size: 22px;
   text-align: center;
   color: #CE7DA6;
-  /* margin: 6% 0% 0% 0%; */
   padding: 2%;
   text-transform: uppercase; 
 }
@@ -71,7 +115,6 @@
   width: 265px; /* 75%;*/
   height: 69px; /* 10vh; */
   border-radius: 100px;
- 
 }
 .button-find a {
   text-decoration: none;
