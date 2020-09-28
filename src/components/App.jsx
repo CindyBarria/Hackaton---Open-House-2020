@@ -8,6 +8,10 @@ import "../styles/App.css";
 import ProductProvider from "../context/ProductProvider";
 import MenuHeader from "../assets/Menu.png";
 import Footer from "../assets/footer.png";
+import SpecificDiet from "../components/filters/SpecificDiet";
+import ButtonFindHere from "./ButtonFindHere";
+import BannerHeader from "./BannerHeader";
+import RecipesCategoryTitle from "./RecipesCategoryTitle";
 
 const App = () => {
   return (
@@ -25,6 +29,16 @@ const App = () => {
           </Route>
           <Route path="/recipes">
             <ProductProvider>
+              <BannerHeader />
+              <RecipesCategoryTitle />
+              <ButtonFindHere />
+              <Recipes />
+            </ProductProvider>
+          </Route>
+          <Route path="/diet">
+            <ProductProvider>
+              <RecipesCategoryTitle />
+              <SpecificDiet />
               <Recipes />
             </ProductProvider>
           </Route>
