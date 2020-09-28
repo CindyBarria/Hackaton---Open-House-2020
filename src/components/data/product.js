@@ -21,6 +21,7 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/cNzfy16/empanadadepino.jpg",
     category: ["cocinaChilena"],
+    diet: [],
   },
   {
     id: "2",
@@ -34,6 +35,7 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/xJGdgkM/empanadas-de-queso.png",
     category: ["cocinaChilena"],
+    diet: [],
   },
   {
     id: "3",
@@ -47,6 +49,7 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/fQmmRhn/Botana-adobada.png",
     category: ["cocinaChilena"],
+    diet: [],
   },
   {
     id: "4",
@@ -68,6 +71,8 @@ const recetas = [
     img:
       "https://i.ibb.co/ySmSfHm/Fresh-Homemade-Chocolate-Brownie-against-a-background.jpg",
     category: ["cocinaParaNiños", "postresYDulces"],
+    diet: [],
+
   },
   {
     id: "5",
@@ -81,6 +86,8 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/Wz8Pwz2/budindepan-2.jpg",
     category: ["cocinaParaNiños", "postresYDulces"],
+    diet: [],
+
   },
   {
     id: "6",
@@ -95,6 +102,7 @@ const recetas = [
     img:
       "https://i.ibb.co/gV38Sh7/panqueques-con-dulce-de-leche-filloas-dulces-60517-orig.jpg",
     category: ["postresYDulces"],
+    diet: [],
   },
   {
     id: "7",
@@ -108,6 +116,7 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/2W8JHBS/Christmas-Cookies-Sugar-Cookies-7.jpg",
     category: ["postresYDulces"],
+    diet: [],
   },
   {
     id: "8",
@@ -129,6 +138,7 @@ const recetas = [
     img:
       "https://i.ibb.co/y5s6KTm/recetas-82c0351d357aef84fedf1d7dc5cbbd48.jpg",
     category: ["postresYDulces"],
+    diet: [],
   },
   {
     id: "9",
@@ -143,6 +153,7 @@ const recetas = [
     img:
       "https://i.ibb.co/tMVXqZH/Barritas-de-cereal-caseras-de-avena-y-pl-tano.png",
     category: ["postresYDulces"],
+    diet: ["sinGluten"],
   },
   {
     id: "10",
@@ -156,6 +167,7 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/jDrfSny/semola.jpg",
     category: ["postresYDulces"],
+    diet: ["sinGluten"],
   },
   {
     id: "11",
@@ -176,20 +188,30 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/y42G4dt/Pan-amasado-En-Mi-Cocina-Hoy.jpg",
     category: ["acompañamientos"],
+    diet: [],
   },
   {
     id: "12",
     title: "",
     name: " Ensalada de brocoli y nueces",
-    ingredients: [""],
-    preparation: "",
-    difficulty: "",
-    time: "",
-    portions: "",
+    ingredients: [
+      "Hierbas a gusto",
+      "2 Limones (su jugo)",
+      "Especias a gusto",
+      "Condimentos a gusto",
+      "1 Cucharada de aceite",
+      "50 g Nueces",
+      "1 Brócoli grande o 2 medianos",
+      ],
+    preparation: "Corta los brócoli en ramitos medianos dejando parte de su tallo. Calienta un litro y medio de agua en una cacerola y espera a que hierva. Agrega los ramitos de brócolis y cocina en ebullición constante durante 20 segundos aproximados hasta dejarlos al dente. Retira del agua y escurre. Pasa por un chorro de agua fría para bajar temperatura y una vez que estén secos, déjalos en un bowl y agrega las nueces trozadas. Condimenta con jugo de limón y hierbas o especias a gusto como orégano y un toque de comino que viene muy bien con las verduras. Finaliza con el aceite y remueve para impregnar sus sabores y sirve de inmediato.",
+    difficulty: "Fácil",
+    time: "10 minutos",
+    portions: "4 personas",
     nutrititional: "",
     img:
       "https://i.ibb.co/d2ztxWN/F-CIL-Y-ADICTIVO-ENSALADA-TIBIA-DE-BR-COLI-AJO-Y-NUECES.jpg",
     category: ["acompañamientos"],
+    diet: ["vegana"],
   },
   {
     id: "13",
@@ -204,6 +226,7 @@ const recetas = [
     img:
       "https://i.ibb.co/QchNTG5/Harira-sopa-de-lentejas-especiada-marroqu-En-Mi-Cocina-Hoy.jpg",
     category: ["platosDeFondo"],
+    diet: [],
   },
   {
     id: "14",
@@ -226,6 +249,7 @@ const recetas = [
     img:
       "https://i.ibb.co/rkSmSdZ/Hornea-este-pastel-de-coliflor-con-jam-n-y-queso-te-va-a-encantar.png",
     category: ["platosDeFondo"],
+    diet: [],
   },
   {
     id: "15",
@@ -239,6 +263,7 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/0sJ7PPz/veggieburger.jpg",
     category: ["platosDeFondo"],
+    diet: ["vegetariana"],
   },
   {
     id: "16",
@@ -253,6 +278,7 @@ const recetas = [
     img:
       "https://i.ibb.co/88hnmpj/Brocheta-de-champi-ones-Cocinando-con-Neus.png",
     category: ["platosDeFondo"],
+    diet: ["vegana"],
   },
   {
     id: "17",
@@ -267,6 +293,7 @@ const recetas = [
     img:
       "https://i.ibb.co/NxCWhLL/Recetas-con-espinacas-irresistibles-y-f-ciles-de-hacer.jpg",
     category: ["platosDeFondo"],
+    diet: ["vegetariana"],
   },
   {
     id: "18",
@@ -280,6 +307,7 @@ const recetas = [
     nutrititional: "",
     img: "https://i.ibb.co/G57Mbx2/Receta-de-gazpacho-andaluz-tradicional.png",
     category: ["sopasYCremas"],
+    diet: [],
   },
 ];
 export default recetas;

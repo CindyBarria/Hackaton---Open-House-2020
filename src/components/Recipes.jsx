@@ -38,20 +38,27 @@ const Recipes = () => {
       </div>
       {todasRecetas.map((product) =>
         product.filtered === true ? (
+
           <main>
             <button
               className="button-card"
               onClick={() => clickProduct(product)}
+               key={product.id}
             >
               <Link to="/preparation" style={{ textDecoration: "none" }}>
-                <div className="productCard" key={product.id}>
+                <div className="productCard">
                   <img src={product.img} alt="" className="img-recipes" />
                   <h1 className="recipes-name">{product.name}</h1>
                 </div>
               </Link>
             </button>
           </main>
-        ) : (
+        ) : product.filteredD === true ? (
+          <button key={product.id}>
+            <div className="productCard" >
+              <p className="card-name">{product.name}</p>
+            </div>
+          </button> ):(
           ""
         )
       )}
@@ -63,3 +70,7 @@ const Recipes = () => {
 };
 
 export default Recipes;
+
+
+
+
