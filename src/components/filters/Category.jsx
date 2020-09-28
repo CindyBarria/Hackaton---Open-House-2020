@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Category.css";
 import { ProductContext } from "../../context/ProductProvider";
+import CategoriasBannerSuperior from "../assets/BannerInferior.png";
 
 const Category = () => {
   const { filter, setFilter } = React.useContext(ProductContext);
   console.log(setFilter);
   return (
-    <div>
+    <div className="categoryContainer">
+      <img src={CategoriasBannerSuperior} alt="" style={{ marginTop: "-4px" }} />
       <h1>Categorias</h1>
       <div>
         <button
