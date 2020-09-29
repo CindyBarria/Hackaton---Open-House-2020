@@ -18,25 +18,26 @@ const SpecificDiet = () => {
     };
   }, [setFilterDiet]);
 
-  const handleClick = (e) => {
+  const handleClick = () => {
     setFilterDiet("sinGluten");
-    e.target.classList.add("btn-active");
-    document.querySelector("#btnVegan").classList.remove("btn-active");
-    document.querySelector("#btnVegetarian").classList.remove("btn-active");
+    document.getElementById("btnGluten").classList.add("btn-active");
+    document.getElementById("btnVegan").classList.remove("btn-active");
+    document.getElementById("btnVegetarian").classList.remove("btn-active");
   }
 
-  const handleClickVege = (e) => {
+  const handleClickVege = () => {
     setFilterDiet("vegetariana");
-    e.target.classList.add("btn-active");
-    document.querySelector("#btnGluten").classList.remove("btn-active");
-    document.querySelector("#btnVegan").classList.remove("btn-active");
+    document.getElementById("btnVegetarian").classList.add("btn-active");
+    // e.target.classList.add("btn-active");
+    document.getElementById("btnGluten").classList.remove("btn-active");
+    document.getElementById("btnVegan").classList.remove("btn-active");
   }
 
-  const handleClickVegan = (e) => {
+  const handleClickVegan = () => {
     setFilterDiet("vegana");
-    e.target.classList.add("btn-active");
-    document.querySelector("#btnGluten").classList.remove("btn-active");
-    document.querySelector("#btnVegetarian").classList.remove("btn-active");
+    document.getElementById("btnVegan").classList.add("btn-active");
+    document.getElementById("btnGluten").classList.remove("btn-active");
+    document.getElementById("btnVegetarian").classList.remove("btn-active");
   }
 
   return (
@@ -54,7 +55,7 @@ const SpecificDiet = () => {
           className="btn-filter"
           id="btnVegetarian"
           active={filterDiet ? "vegetariana" : undefined}
-          onClick={(e) => handleClickVege(e)}
+          onClick={() => handleClickVege()}
         >
           {" "}
           <span>
@@ -67,7 +68,7 @@ const SpecificDiet = () => {
           className="btn-filter"
           id="btnVegan"
           active={filterDiet ? "vegana" : undefined}
-          onClick={(e) => handleClickVegan(e)}
+          onClick={() => handleClickVegan()}
         >
           {" "}
           <span>
@@ -80,7 +81,7 @@ const SpecificDiet = () => {
           className="btn-filter"
           id="btnGluten"
           active={filterDiet ? "sinGluten" : undefined}
-          onClick={(e) => handleClick(e)}
+          onClick={() => handleClick()}
         >
           {" "}
           <span>

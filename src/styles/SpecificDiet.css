@@ -4,9 +4,11 @@
     flex-wrap: wrap;
     align-items: center;
 }
+
 .container-banner-diet {
     display: flex;
 }
+
 .title-container-diet {
     font-family: "clarendon regular";
     font-style: normal;
@@ -19,6 +21,7 @@
     color: #525759;
     height: 49px;
 }
+
 .container-btn-filter {
     display: flex;
     flex-direction: column;
@@ -32,13 +35,6 @@
     box-sizing: border-box;
     border-radius: 100px;
     margin-bottom: 18px;
-    font-family: 'clarendon regular';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 17px;
-    color: #525759;
-    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,23 +48,16 @@
     box-sizing: border-box;
     border-radius: 100px;
     margin-bottom: 18px;
-    font-family: 'clarendon regular';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 17px;
-    color: #525759;
-    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
+
 span {
     width: 22%;
 }
+
 h1.diet-name {
-    font-family: 'clarendon regular';
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -84,8 +73,8 @@ h1.diet-name {
 .btn-filter img {
     width: 30px;
     margin: 0 10px;
-    
 }
+
 img.gluten-free-icon {
     width: 20px;
 }
@@ -107,19 +96,17 @@ a.diet-name {
     justify-content: space-between;
     width: 85%;
     height: 80px;
-
 }
 
 .btn-back {
     width: 130px;
     height: 40px;
-    background-color:  #FFFFFF;
+    background-color: #FFFFFF;
     border: 2px solid #0093AD;
     box-sizing: border-box;
     border-radius: 100px;
     display: flex;
     justify-content: center;
-    
 }
 
 .btn-back a {
@@ -141,8 +128,9 @@ a.diet-name {
     display: flex;
     justify-content: center;
 }
+
 .btn-next a {
-    font-family: "apex sans" ;
+    font-family: "apex sans";
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
