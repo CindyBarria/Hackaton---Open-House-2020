@@ -11,17 +11,24 @@ const Category = () => {
 
   return (
     <div className="categoryContainer">
+
       <img src={CategoriasBannerSuperior} alt="" style={{ marginTop: "-4px" }} />
+
       <h1 className="leadTittle">Ricas recetas</h1>
+
       <img src={Buscador} alt="" style={{ marginLeft: "25px" }}  />
-      <h2 className="categoryTittle">Categorias</h2>
+
+      <h1 className="categoryTittle">Categorias</h1>
+  
       <div className="categoryButtons">
-        <button className = "chileanCuisine"
-          active={filter ? "cocinaChilena" : undefined}
-          onClick={() => setFilter("cocinaChilena")}
-        >
-          <Link to="/recipes"> Cocina Chilena</Link>
-        </button>
+        <Link to="/recipes">
+            <button className = "chileanCuisine"
+              active={filter ? "cocinaChilena" : undefined}
+              onClick={() => setFilter("cocinaChilena")}
+            >
+            <h1 className="clileanCuisineText">Cocina Chilena</h1>
+            </button>
+        </Link>
         <button className = "kidsCuisine"
           active={filter ? "cocinaParaNiños" : undefined}
           onClick={() => setFilter("cocinaParaNiños")}

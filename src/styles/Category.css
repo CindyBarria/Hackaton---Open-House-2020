@@ -5,6 +5,7 @@
   text-align: center;
   font-size: 35px;
   margin: 9% 0% 0% 0%;
+  text-transform: uppercase;
 }
 
 .categoryTittle{
@@ -12,6 +13,7 @@
   text-align: center;
   font-size: 25px;
   font-family: "clarendon regular";
+  text-transform: uppercase;
 }
 
 .categoryButtons{
@@ -23,16 +25,21 @@
 }
 
     .chileanCuisine{
-        background-image:url(../assets/Categoria-1.png);
+        background-image:url(../assets/Categoria-1.jpg);
         background-repeat:no-repeat;
+        background-size: contain;
         width: 69%;
         height: 27vh;
         border-radius: 13%;  
-    }
+    } 
+     .chileanCuisine .chileanCuisineText{
+         background-color: #E56F2D;
+     }
 
     .kidsCuisine{
-        background-image:url(../assets/Categoria-2.png);
+        background-image:url(../assets/Categoria-2.jpg);
         background-repeat:no-repeat;
+        background-size: 100% 80%;
         width: 69%;
         height: 27vh;
         border-radius: 13%;
@@ -40,8 +47,9 @@
     }
 
     .dessertsSweets{
-        background-image:url(../assets/Categoria-3.png);
+        background-image:url(../assets/Categoria-3.jpg);
         background-repeat:no-repeat;
+        background-size: 100% 80%;
         width: 69%;
         height: 27vh;
         border-radius: 13%;
@@ -49,8 +57,9 @@
     }
 
     .sides{
-        background-image:url(../assets/Categoria-4.png);
+        background-image:url(../assets/Categoria-4.jpg);
         background-repeat:no-repeat;
+        background-size: 100% 80%;
         width: 69%;
         height: 27vh;
         border-radius: 13%;
@@ -58,16 +67,18 @@
     }
 
     .backgroundDishes{
-        background-image:url(../assets/Categoria-5.png);
+        background-image:url(../assets/Categoria-5.jpg);
         background-repeat:no-repeat;
+        background-size: 100% 80%;
         width: 69%;
         height: 27vh;
         border-radius: 13%;
     }
 
     .creamsSoups{
-        background-image:url(../assets/Categoria-6.png);
+        background-image:url(../assets/Categoria-6.jpg);
         background-repeat:no-repeat;
+        background-size: 100% 80%;
         width: 69%;
         height: 27vh;
         border-radius: 13%;
