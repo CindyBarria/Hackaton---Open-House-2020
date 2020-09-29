@@ -3,8 +3,8 @@
   padding: 0px;
 }
 p {
-  font-family: "apex sans";
-  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
 }
 @font-face {
   font-family: "clarendon regular";
@@ -23,13 +23,12 @@ h1 {
   font-family: "clarendon regular";
   text-decoration: none;
 }
-.counterContainer .counter button{
-  background-image: url("../assets/heart.png");
-  background-repeat:no-repeat;
+.counterContainer .counter button {
+  background-repeat: no-repeat;
   background-size: contain;
   background-color: transparent !important;
-  height:100px;
-  width:100px;
-  background-position:center;
+  height: 100px;
+  width: 100px;
+  background-position: center;
   border-radius: 50%;
 }

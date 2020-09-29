@@ -14,6 +14,7 @@ import Download from "../assets/descargar.png";
 import Add from "../assets/agregar.png";
 import ArrowDown from "../assets/arrow-down.png";
 import Like from "../assets/Corazon.png";
+import ReactPlayer from "react-player";
 
 const Preparation = () => {
   const { preparacion } = React.useContext(ProductContext);
@@ -110,13 +111,14 @@ const Preparation = () => {
               </div>
               <div className="container-video">
                 <h1 className="preparation-title">PREPARACIÓN</h1>
-                <video
-                  className="video"
-                  src="https://www.youtube.com/watch?v=JoxYdNF_Vr8&feature=emb_title"
-                  width="350"
-                  height="250"
-                  controls
-                />
+                <div className="video">
+                  <ReactPlayer
+                    width={350}
+                    height={150}
+                    url="https://www.youtube.com/watch?v=JoxYdNF_Vr8&feature=emb_title"
+                    controls={true}
+                  />
+                </div>
               </div>
               <div className="container-preparation">
                 <ol>
