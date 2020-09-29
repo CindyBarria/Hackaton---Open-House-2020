@@ -130,7 +130,7 @@ const recetas = [
     name: "Leche asada",
     ingredients: [
       "1L. Leche sin lactosa Colun  ",
-      "Huevo grande blanco Unimarc  ",
+      "1 Huevo grande blanco Unimarc  ",
       "1 kg Azúcar granulada Iansa  ",
       "2 Naranjas  ",
       "15 grs Canela molida Gourmet  ",
@@ -149,7 +149,7 @@ const recetas = [
     img:
       "https://i.ibb.co/y5s6KTm/recetas-82c0351d357aef84fedf1d7dc5cbbd48.jpg",
     category: ["postresYDulces"],
-    diet: [],
+    diet: ["sinGluten"],
   },
   {
     id: "9",
