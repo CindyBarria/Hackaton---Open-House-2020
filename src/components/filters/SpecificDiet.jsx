@@ -58,7 +58,7 @@ const SpecificDiet = () => {
           onClick={() => handleClickVege()}
         >
           {" "}
-          <span>
+          <span className="diet-span">
             <img src={VegetarianIcon} alt="Icono vegetariano" />
           </span>{" "}
           <h1 className="diet-name">VEGETARIANA</h1>
@@ -71,7 +71,7 @@ const SpecificDiet = () => {
           onClick={() => handleClickVegan()}
         >
           {" "}
-          <span>
+          <span className="diet-span">
             <img src={VeganIcon} alt="Icono vegano" />
           </span>{" "}
           <h1 className="diet-name">VEGANA</h1>
@@ -84,7 +84,7 @@ const SpecificDiet = () => {
           onClick={() => handleClick()}
         >
           {" "}
-          <span>
+          <span className="diet-span">
             <img
               src={GlutenFreeIcon}
               alt="Icono sin gluten"
