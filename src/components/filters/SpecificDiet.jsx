@@ -5,20 +5,27 @@ import { Link } from "react-router-dom";
 import VegetarianIcon from "../../assets/Vegetariana.png";
 import VeganIcon from "../../assets/Shape.png";
 import GlutenFreeIcon from "../../assets/Sin-Gluten.png";
+import ImgRight from '../../assets/frutas2-ladoderecho.png';
+import ImgLeft from '../../assets/frutas1-ladoizquierdo.png';
+import RecipesCategoryTitle from "../RecipesCategoryTitle";
 
 const SpecificDiet = () => {
   const { filterDiet, setFilterDiet } = React.useContext(ProductContext);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     return () => {
       setFilterDiet("");
-      window.scrollTo(0, 0);
     };
-  }, []);
+  }, [setFilterDiet]);
 
   return (
     <div className="container-filters">
+
+      <div className="container-banner-diet">
+        <img src={ImgLeft} alt="" width={70}/>
+        <RecipesCategoryTitle />
+        <img src={ImgRight} alt="" width={70}/>
+      </div>
       <h2 className="title-container-diet">¿Sigues alguna dieta?</h2>
 
       <div className="container-btn-filter">
@@ -32,7 +39,6 @@ const SpecificDiet = () => {
             <img src={VegetarianIcon} alt="Icono vegetariano" />
           </span>{" "}
           VEGETARIANA
-          {/* <Link to="/recipes" className="diet-name">VEGETARIANA</Link> */}
         </button>
 
         <button
@@ -45,7 +51,6 @@ const SpecificDiet = () => {
             <img src={VeganIcon} alt="Icono vegano" />
           </span>{" "}
           VEGANA
-          {/* <Link to="/recipes" className="diet-name">VEGANA</Link> */}
         </button>
 
         <button
@@ -62,7 +67,6 @@ const SpecificDiet = () => {
             />
           </span>{" "}
           SIN GLUTEN
-          {/* <Link to="/recipes" className="diet-name">SIN GLUTEN</Link> */}
         </button>
       </div>
 
@@ -71,7 +75,7 @@ const SpecificDiet = () => {
           <Link to="/recipes">Atrás</Link>
         </button>
 
-        <button className="btn-next" onClick={() => setFilterDiet(filterDiet)}>
+        <button className="btn-next">
           <Link to="/recipes">Siguiente</Link>
         </button>
       </div>

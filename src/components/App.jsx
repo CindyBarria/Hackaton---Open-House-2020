@@ -12,12 +12,14 @@ import SpecificDiet from "../components/filters/SpecificDiet";
 import ButtonFindHere from "./ButtonFindHere";
 import BannerHeader from "./BannerHeader";
 import RecipesCategoryTitle from "./RecipesCategoryTitle";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   return (
     <div>
       <img src={MenuHeader} alt="" />
       <Router>
+        <ScrollToTop />
         <Switch>
           <Route path="/" exact>
             <Home />
@@ -37,7 +39,6 @@ const App = () => {
           </Route>
           <Route path="/diet">
             <ProductProvider>
-              <RecipesCategoryTitle />
               <SpecificDiet />
               <Recipes />
             </ProductProvider>

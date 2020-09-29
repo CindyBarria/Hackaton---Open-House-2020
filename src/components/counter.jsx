@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../styles/App.css";
 
 function Counter() {
@@ -9,7 +9,7 @@ function Counter() {
   };
   return (
     <div className="counterContainer">
-      <img />
+      <img alt=""/>
       <div>{count}</div>
       <div className="counter">
         <button onClick={addLike}> Like </button>

@@ -5,6 +5,7 @@
   width: 100vw;
   height: 100%;
 }
+
 /* carta con imagen, boton y texto */
 .productCard {
   display: flex;
@@ -21,10 +22,12 @@ img.heart {
   top: 15px;
   z-index: 3;
 }
+
 .button-card {
   background: none;
   border: none;
 }
+
 .img-recipes {
   width: 80%;
   max-width: 500px;
@@ -45,6 +48,7 @@ img.heart {
   font-size: 18px;
   letter-spacing: 1px;
 }
+
 /*información de dificultad y tiempo por receta*/
 .container-extra-info {
   width: 80%;
@@ -61,6 +65,7 @@ img.heart {
   align-items: center;
   color: #FFFFFF;
 }
+
 .difficulty-info {
   display: flex;
   width: 45%;
@@ -68,10 +73,12 @@ img.heart {
   padding: 2px;
   box-sizing: border-box;
 }
+
 .difficulty-info img {
   width: 28px;
   margin-right: 10px;
 }
+
 p.time-info {
   font-family: "clarendon regular";
   width: 45%;
@@ -83,14 +90,16 @@ p.time-info {
 span.span-minuts {
   font-family: "apex sans";
 }
+
 .title-recipes {
   color: #ce7da6;
   font-style: normal;
   font-size: 28px;
   text-align: center;
-  margin: 9% 0% 0% 0%;
-  text-transform: uppercase; 
+  margin: 6% 0% 0% 0%;
+  text-transform: uppercase;
 }
+
 .title-recipesTwo {
   font-style: normal;
   font-weight: 500;
@@ -98,7 +107,7 @@ span.span-minuts {
   text-align: center;
   color: #CE7DA6;
   padding: 2%;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 /* boton para personalizar receta */
@@ -108,14 +117,16 @@ span.span-minuts {
   align-items: center;
   margin-bottom: 10px;
 }
+
 .button-find {
   background: #FFFFFF;
   border: 4px solid #c5c6c7;
   box-sizing: border-box;
-  width: 265px; /* 75%;*/
-  height: 69px; /* 10vh; */
+  width: 265px;
+  height: 69px;
   border-radius: 100px;
 }
+
 .button-find a {
   text-decoration: none;
   font-family: "clarendon regular";
@@ -129,6 +140,7 @@ span.span-minuts {
   text-transform: uppercase;
   color: #525759;
 }
+
 /* texto para personalizar receta */
 .text {
   font-family: "apex sans";
@@ -140,6 +152,7 @@ span.span-minuts {
   color: #000000;
   padding: 21px;
 }
+
 /* boton volver */
 .back {
   display: flex;
@@ -148,10 +161,12 @@ span.span-minuts {
   justify-content: space-around;
   align-items: center;
 }
+
 .arrow {
   margin-left: 17%;
   margin-top: 5px;
 }
+
 .back-text {
   font-family: "apex sans";
   font-style: normal;
@@ -160,6 +175,7 @@ span.span-minuts {
   line-height: 29px;
   color: #0093AD;
 }
+
 .container-text {
   margin: 5% 0;
 }
