@@ -4,6 +4,8 @@ import "../styles/Recipes.css";
 
 function ButtonFindHere() {
   return (
+    <Fragment>
+
     <div className="container-button-find">
       <p className="text">
         Encuentra el menú perfecto según tus preferencias y necesidades
@@ -13,6 +15,7 @@ function ButtonFindHere() {
         <Link to="/diet">Encontrar Aquí</Link>
       </button>
     </div>
+    </Fragment>
   );
 }
 

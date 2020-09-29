@@ -21,4 +21,15 @@ p {
 
 h1 {
   font-family: "clarendon regular";
+  text-decoration: none;
+}
+.counterContainer .counter button{
+  background-image: url("../assets/heart.png");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-color: transparent !important;
+  height:100px;
+  width:100px;
+  background-position:center;
+  border-radius: 50%;
 }
