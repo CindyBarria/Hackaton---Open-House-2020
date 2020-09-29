@@ -1,11 +1,10 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import "../styles/Preparation.css";
 import bannerSuperior from "../assets/BannerSuperior.png";
 import bannerInferior from "../assets/BannerInferior.png";
 import flecha from "../assets/Vector.png";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../context/ProductProvider";
-//import Line from "../assets/Line-1.png";
 import EasyIcon from "../assets/facil-gris.png";
 import MediumIcon from "../assets/intermedio-gris.png";
 import ChallengingIcon from "../assets/desafiante-gris.png";
@@ -17,7 +16,13 @@ import Like from "../assets/Corazon.png";
 import ReactPlayer from "react-player";
 
 const Preparation = () => {
-  const { preparacion } = React.useContext(ProductContext);
+  const { preparacion, setPreparacion } = React.useContext(ProductContext);
+
+  useEffect(() => {
+    return () => {
+      setPreparacion("");
+    };
+  }, [setPreparacion]);
 
   return (
     <div>

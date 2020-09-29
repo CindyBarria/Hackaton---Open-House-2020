@@ -1,3 +1,12 @@
+.container-filters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container-banner-diet {
+    display: flex;
+}
 .title-container-diet {
     font-family: "clarendon regular";
     font-style: normal;
@@ -9,17 +18,7 @@
     text-align: center;
     color: #525759;
     height: 49px;
-
-    
 }
-
-.container-filters {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 .container-btn-filter {
     display: flex;
     flex-direction: column;
