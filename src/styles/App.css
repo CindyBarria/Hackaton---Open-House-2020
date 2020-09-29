@@ -23,12 +23,20 @@ h1 {
   font-family: "clarendon regular";
   text-decoration: none;
 }
-.counterContainer .counter button {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: transparent !important;
-  height: 100px;
-  width: 100px;
-  background-position: center;
-  border-radius: 50%;
+.counterContainer {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: -68% 0% 0% 72%;
+}
+.button-counter {
+  background: none;
+  border: none;
+}
+.likes {
+  margin: -50% 0% 0% 0%;
+  text-align: center;
 }

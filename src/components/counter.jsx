@@ -1,19 +1,58 @@
-import React, { useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import "../styles/App.css";
+import Like from "../assets/like.png";
+import Unlike from "../assets/Corazon.png";
+import fondoLike from "../assets/ventanaLike.png";
 
 function Counter() {
-  const [count, setCount] = useState(0);
+  const [likes, setLikes] = useState(0);
+  console.log(likes);
+  useEffect(() => {
+    addLike();
+  }, []);
   const addLike = () => {
-    let contador = count + 1;
-    setCount(contador);
+    let like = likes + 1;
+    setLikes(like);
   };
   return (
     <div className="counterContainer">
-      <img alt=""/>
-      <div>{count}</div>
-      <div className="counter">
-        <button onClick={addLike}> Like </button>
-      </div>
+      {likes.lenght === 0 ? (
+        <Fragment>
+          <div>
+            <img src={fondoLike} alt="" />
+            <p className="likes"> {likes}</p>
+          </div>
+          <div className="counter">
+            <button className="button-counter" onClick={() => addLike()}>
+              <img src={Unlike} alt=""></img>
+            </button>
+          </div>
+        </Fragment>
+      ) : likes === 1 ? (
+        <Fragment>
+          <div>
+            <img src={fondoLike} alt="" />
+            <p className="likes"> {likes}</p>
+          </div>
+          <div className="counter">
+            <button className="button-counter" onClick={() => addLike()}>
+              <img src={Unlike} alt=""></img>
+            </button>
+          </div>
+        </Fragment>
+      ) : likes > 1 ? (
+        <Fragment>
+          <div>
+            <img src={fondoLike} alt="" />
+            <p className="likes"> {likes}</p>
+          </div>
+          <div className="counter">
+            <button className="button-counter" onClick={() => addLike()}>
+              <img src={Like} alt=""></img>
+            </button>
+          </div>
+        </Fragment>
+      ) : undefined}
     </div>
   );
 }

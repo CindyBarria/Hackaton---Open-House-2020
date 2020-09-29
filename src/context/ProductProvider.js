@@ -27,17 +27,6 @@ const ProductProvider = (props) => {
     setRecetas(filtered);
   }, [filter, filterDiet]);
 
-  // React.useEffect(() => {
-  //   setRecetas([...recetas]);
-
-  //   const filteredDiet = recetas.map((p) => ({
-  //     ...p,
-
-  //   }));
-
-  //   setRecetas(filteredDiet);
-  // }, [filterDiet]);
-
   const clickProduct = (product) => {
     let receta = {
       id: product.id,
