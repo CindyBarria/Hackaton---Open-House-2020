@@ -1,8 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Recipes.css";
 import { ProductContext } from "../context/ProductProvider";
 import bannerInferior from "../assets/BannerInferior.png";
+import Line from '../assets/Line-1.png';
+import EasyIcon from '../assets/Easy.png';
+import MediumIcon from '../assets/Medium.png';
+import ChallengingIcon from '../assets/Challenging.png';
+import Like from '../assets/Corazon.png';
 
 const Recipes = () => {
   const { todasRecetas, clickProduct } = React.useContext(ProductContext);
@@ -22,16 +27,43 @@ const Recipes = () => {
               <Link to="/preparation" style={{ textDecoration: "none" }}>
                 <div className="productCard">
                   <img src={product.img} alt="" className="img-recipes" />
+                  <img src={Like} alt="Corazón me gusta" className="heart"/>
                   <h1 className="recipes-name">{product.name}</h1>
+                  <div className="container-extra-info">
+                    <div className="difficulty-info">
+                    {product.difficulty === 'Fácil' ? (
+                      <Fragment >
+                        <img src={EasyIcon} alt="Icono fácil"/>
+                      </Fragment>
+                      ) : product.difficulty === 'Intermedio' ? (
+                      <Fragment >
+                        <img src={MediumIcon} alt="Icono intermedio"/>
+                      </Fragment>
+                      ) : product.difficulty === 'Desafiante' ? (
+                      <Fragment >
+                        <img src={ChallengingIcon} alt="Icono desafiante"/>
+                     </Fragment>
+                     ) : undefined }
+                    <p>{product.difficulty}</p>
+
+                    </div>
+                    
+                    <span><img src={Line} alt="Line divisora"/></span>
+                    <p className="time-info">{product.time} <span className="span-minuts">Minutos</span></p>
+                  
+                  </div>
                 </div>
               </Link>
             </button>
           </main>
         ) : product.filteredD === true ? (
-          <button key={product.id}>
-            <div className="productCard">
-              <p className="card-name">{product.name}</p>
-            </div>
+          <button className="button-card" onClick={() => clickProduct(product)}>
+            <Link to="/preparation" style={{ textDecoration: "none" }}>
+              <div className="productCard">
+                <img src={product.img} alt="" className="img-recipes" />
+                <h1 className="recipes-name">{product.name}</h1>
+              </div>
+            </Link>
           </button>
         ) : (
           ""

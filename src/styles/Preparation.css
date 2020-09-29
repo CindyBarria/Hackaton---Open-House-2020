@@ -1,0 +1,148 @@
+.container-info-preparation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 10px;
+  color: #525759;
+  justify-content: center;
+  align-items: flex-end;
+  height: 16vh;
+}
+.icon-difficulty {
+  width: 31%;
+}
+.difficulty-preparation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 3% 0% 0%;
+}
+.time-preparation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 1px solid #575c5e6b;
+  padding: 0% 3% 0% 3%;
+}
+.portions-preparation {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #575c5e6b;
+  padding: 0% 0% 0% 3%;
+  align-items: center;
+}
+.img-preparation {
+  width: 82%;
+  max-width: 500px;
+  height: 35vh;
+  border-radius: 20px;
+  margin: 8%;
+}
+.container-box {
+  background: #525759;
+  color: white;
+  height: 41vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -41%;
+}
+.icon-share {
+  display: flex;
+  flex-direction: row;
+  padding: 8% 20% 8% 9%;
+}
+.ingredients-title,
+.nutricional-title,
+.preparation-title {
+  color: #525759;
+  text-align: center;
+  padding: 7%;
+  font-size: 18px;
+}
+
+.text-ingredients,
+.text-preparation {
+  padding: 0% 0% 6% 15%;
+}
+.img.add {
+  margin-right: 3%;
+}
+.add {
+  background: none;
+  border: 3px solid #0093ad;
+  border-radius: 43px;
+  padding: 5%;
+  width: 59%;
+  height: 9vh;
+  color: #0093ad;
+  font-size: 105%;
+  margin: 3% 0% 5% 0%;
+}
+.buy {
+  border: 3px solid #0093ad;
+  border-radius: 43px;
+  padding: 5%;
+  width: 59%;
+  height: 9vh;
+  color: white;
+  background: #0093ad;
+  font-size: 105%;
+  margin-bottom: 7%;
+}
+.container-button-buy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nutricional-preparation {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 14vh;
+  border-radius: 62px;
+}
+.container-nutricional {
+  background: #f2f2f2;
+  height: 34vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ce7da6;
+}
+.kcal {
+  color: #525759;
+}
+.container-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ol {
+  counter-reset: item 0;
+}
+li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: #ce7da6;
+  font-size: 42px;
+  font-family: "clarendon regular";
+  margin: 0% 0% 0% 4%;
+}
+.container-preparation {
+  margin-top: 12%;
+}
+.heartPreparation {
+  position: absolute;
+  margin: 12% 0% 0% -24%;
+  z-index: 3;
+}
