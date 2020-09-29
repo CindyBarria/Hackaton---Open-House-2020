@@ -20,22 +20,23 @@ const ProductProvider = (props) => {
 
     const filtered = recetas.map((p) => ({
       ...p,
-      filtered: p.category.includes(filter),
+      filtered: filter ? p.category.includes(filter) : true, // !filter || p.category.includes(filter)
+      filteredD: filterDiet ? p.diet.includes(filterDiet) : true,
     }));
 
     setRecetas(filtered);
-  }, [filter]);
+  }, [filter, filterDiet]);
 
-  React.useEffect(() => {
-    setRecetas([...recetas]);
+  // React.useEffect(() => {
+  //   setRecetas([...recetas]);
 
-    const filteredDiet = recetas.map((p) => ({
-      ...p,
-      filteredD: p.diet.includes(filterDiet),
-    }));
+  //   const filteredDiet = recetas.map((p) => ({
+  //     ...p,
 
-    setRecetas(filteredDiet);
-  }, [filterDiet]);
+  //   }));
+
+  //   setRecetas(filteredDiet);
+  // }, [filterDiet]);
 
   const clickProduct = (product) => {
     let receta = {
