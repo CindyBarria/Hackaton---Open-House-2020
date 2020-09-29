@@ -14,6 +14,7 @@ import Add from "../assets/agregar.png";
 import ArrowDown from "../assets/arrow-down.png";
 import Like from "../assets/Corazon.png";
 import ReactPlayer from "react-player";
+import Counter from "./counter";
 
 const Preparation = () => {
   const { preparacion, setPreparacion } = React.useContext(ProductContext);
@@ -80,14 +81,15 @@ const Preparation = () => {
                   <span className="minuts">Pers.</span>
                 </h1>
               </div>
-              <img src={product.img} alt="" className="img-preparation" />
-              <img
-                src={Like}
-                alt="Corazón me gusta"
-                className="heartPreparation"
-              />
+              <div>
+                <img src={product.img} alt="" className="img-preparation" />
+
+                <Counter />
+              </div>
               <div className="container-box">
-                <p className="share-download">¡Comparte o descarga esta receta!</p>
+                <p className="share-download">
+                  ¡Comparte o descarga esta receta!
+                </p>
                 <div className="icon-share">
                   <img src={Share} alt="" style={{ marginRight: "34%" }}></img>
                   <img src={Download} alt=""></img>
@@ -97,18 +99,19 @@ const Preparation = () => {
               <div className="ingredient-div">
                 {product.ingredients.map((ingredients, i) => (
                   <div className="container-ingredients" key={i}>
-                    <p className="text-ingredients" >
-                    {" "}
-                    
-                  </p>
-                  <img src={Add} alt="" className="img-add" />
+                    <p className="text-ingredients"> </p>
+                    <img src={Add} alt="" className="img-add" />
                     {ingredients}
                   </div>
                 ))}
               </div>
               <div className="container-button-buy">
-                <button className="add"><p> Agregar al Carro</p></button>
-                <button className="buy"><p>Comprar</p></button>
+                <button className="add">
+                  <p> Agregar al Carro</p>
+                </button>
+                <button className="buy">
+                  <p>Comprar</p>
+                </button>
               </div>
               <div className="container-nutritional">
                 <h1 className="nutritional-title">VALOR NUTRICIONAL</h1>
@@ -136,7 +139,6 @@ const Preparation = () => {
                       <li> </li>
                       <p className="text-preparation">{preparation}</p>
                     </div>
-                    
                   ))}
                 </ol>
               </div>
