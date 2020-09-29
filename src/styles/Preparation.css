@@ -18,6 +18,14 @@
   align-items: center;
   padding: 0% 3% 0% 0%;
 }
+h1.info-top-img, span.minuts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #525759;
+  text-transform: uppercase;
+}
 .time-preparation {
   display: flex;
   flex-direction: column;
@@ -25,6 +33,12 @@
   justify-content: space-around;
   border-left: 1px solid #575c5e6b;
   padding: 0% 3% 0% 3%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #525759;
+  text-transform: uppercase;
 }
 .portions-preparation {
   display: flex;
@@ -32,6 +46,12 @@
   border-left: 1px solid #575c5e6b;
   padding: 0% 0% 0% 3%;
   align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #525759;
+  text-transform: uppercase;
 }
 .img-preparation {
   width: 82%;
@@ -50,47 +70,78 @@
   align-items: center;
   margin-top: -41%;
 }
+.share-download {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
 .icon-share {
   display: flex;
   flex-direction: row;
   padding: 8% 20% 8% 9%;
 }
 .ingredients-title,
-.nutricional-title,
+.nutritional-title,
 .preparation-title {
   color: #525759;
   text-align: center;
   padding: 7%;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
 }
-
-.text-ingredients,
-.text-preparation {
-  padding: 0% 0% 6% 15%;
+.ingredient-div {
+  display: flex;
+  flex-direction: column;
 }
-.img.add {
-  margin-right: 3%;
+.container-ingredients {
+  display: flex;
+  flex-direction: row;
+  margin: 2px 4px 15px 1px;
+  padding: 1px;
+}
+.text-ingredients {
+  padding: 0% 2% 6% 15%;
+}
+.img-add {
+  margin-right: 2%;
 }
 .add {
   background: none;
-  border: 3px solid #0093ad;
-  border-radius: 43px;
+  border: 2px solid #0093ad;
+  border-radius: 100px;
+  box-sizing: border-box;
   padding: 5%;
-  width: 59%;
-  height: 9vh;
-  color: #0093ad;
-  font-size: 105%;
   margin: 3% 0% 5% 0%;
+  width: 50%;
+  height: 7vh;
+  color: #0093ad;  
+  font-size: 105%;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .buy {
-  border: 3px solid #0093ad;
-  border-radius: 43px;
+  border: 2px solid #0093ad;
+  border-radius: 100px;
   padding: 5%;
-  width: 59%;
-  height: 9vh;
+  width: 50%;
+  height: 7vh;
   color: white;
   background: #0093ad;
   font-size: 105%;
+  font-style: normal;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 7%;
 }
 .container-button-buy {
@@ -98,7 +149,7 @@
   flex-direction: column;
   align-items: center;
 }
-.nutricional-preparation {
+.nutritional-preparation {
   display: flex;
   flex-direction: column;
   font-size: 18px;
@@ -108,8 +159,11 @@
   width: 25%;
   height: 14vh;
   border-radius: 62px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
 }
-.container-nutricional {
+.container-nutritional {
   background: #f2f2f2;
   height: 34vh;
   display: flex;
@@ -120,6 +174,10 @@
 }
 .kcal {
   color: #525759;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
 }
 .container-video {
   display: flex;
@@ -127,8 +185,15 @@
   justify-content: center;
   align-items: center;
 }
+.li-preparation {
+  display: flex;
+}
 ol {
   counter-reset: item 0;
+}
+li {
+  margin: 0 0 0 6%;
+  color: #FFFFFF ;
 }
 li:before {
   content: counter(item) ". ";
@@ -137,6 +202,13 @@ li:before {
   font-size: 42px;
   font-family: "clarendon regular";
   margin: 0% 0% 0% 4%;
+}
+.text-preparation {
+  padding: 0% 7% 7% 5%;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
 }
 .container-preparation {
   margin-top: 12%;
