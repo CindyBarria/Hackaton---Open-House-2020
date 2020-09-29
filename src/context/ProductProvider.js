@@ -10,11 +10,10 @@ const ProductProvider = (props) => {
   const [filterDiet, setFilterDiet] = React.useState("");
   const [preparacion, setPreparacion] = React.useState([]);
 
-
   //useEffect ---------------------------------------------
   React.useEffect(() => {
     setRecetas(recetas);
-  }, []); 
+  }, []);
 
   React.useEffect(() => {
     setRecetas([]);
@@ -24,13 +23,12 @@ const ProductProvider = (props) => {
       filtered: p.category.includes(filter),
     }));
 
-    setRecetas(filtered);    
+    setRecetas(filtered);
   }, [filter]);
 
-  
   React.useEffect(() => {
-    setRecetas([...recetas])
-    
+    setRecetas([...recetas]);
+
     const filteredDiet = recetas.map((p) => ({
       ...p,
       filteredD: p.diet.includes(filterDiet),
@@ -55,7 +53,6 @@ const ProductProvider = (props) => {
     setPreparacion([...preparacion, receta]);
   };
 
-
   return (
     <ProductContext.Provider
       value={{
@@ -67,7 +64,6 @@ const ProductProvider = (props) => {
         clickProduct,
         preparacion,
         setPreparacion,
-
       }}
     >
       {props.children}
