@@ -5,7 +5,7 @@ import bannerInferior from "../assets/BannerInferior.png";
 import flecha from "../assets/Vector.png";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../context/ProductProvider";
-import Line from "../assets/Line-1.png";
+//import Line from "../assets/Line-1.png";
 import EasyIcon from "../assets/facil-gris.png";
 import MediumIcon from "../assets/intermedio-gris.png";
 import ChallengingIcon from "../assets/desafiante-gris.png";
@@ -24,8 +24,9 @@ const Preparation = () => {
       <p className="back">
         <img src={flecha} alt="" className="arrow" />
         <Link
-          to="/category"
+          to="/recipes"
           style={{ color: "#0093AD", textDecoration: "none" }}
+          className="back-text"
         >
           Volver
         </Link>
@@ -34,7 +35,7 @@ const Preparation = () => {
       <div preparacion={preparacion}>
         {preparacion.map((product) =>
           preparacion.length > 0 ? (
-            <div>
+            <div key={product.id}>
               <h1 className="title-recipes">{product.name}</h1>
               <div className="container-info-preparation">
                 <div className="difficulty-preparation">
@@ -63,7 +64,7 @@ const Preparation = () => {
                       />
                     </Fragment>
                   ) : undefined}
-                  <h1>{product.difficulty}</h1>
+                  <h1 className="info-top-img">{product.difficulty}</h1>
                 </div>
                 <h1 className="time-preparation">
                   {product.time} <span className="minuts">Minutos</span>
@@ -80,29 +81,32 @@ const Preparation = () => {
                 className="heartPreparation"
               />
               <div className="container-box">
-                <p>¡Comparte o descarga esta receta!</p>
+                <p className="share-download">¡Comparte o descarga esta receta!</p>
                 <div className="icon-share">
                   <img src={Share} alt="" style={{ marginRight: "34%" }}></img>
                   <img src={Download} alt=""></img>
                 </div>
               </div>
               <h1 className="ingredients-title">INGREDIENTES</h1>
-              <div>
-                {product.ingredients.map((ingredients) => (
-                  <p className="text-ingredients">
+              <div className="ingredient-div">
+                {product.ingredients.map((ingredients, i) => (
+                  <div className="container-ingredients" key={i}>
+                    <p className="text-ingredients" >
                     {" "}
-                    <img src={Add} alt="" className="img-add" />
-                    {ingredients}
+                    
                   </p>
+                  <img src={Add} alt="" className="img-add" />
+                    {ingredients}
+                  </div>
                 ))}
               </div>
               <div className="container-button-buy">
-                <button className="add">Agregar al Carro</button>
-                <button className="buy">Comprar</button>
+                <button className="add"><p> Agregar al Carro</p></button>
+                <button className="buy"><p>Comprar</p></button>
               </div>
-              <div className="container-nutricional">
-                <h1 className="nutricional-title">VALOR NUTRICIONAL</h1>
-                <h1 className="nutricional-preparation">
+              <div className="container-nutritional">
+                <h1 className="nutritional-title">VALOR NUTRICIONAL</h1>
+                <h1 className="nutritional-preparation">
                   {product.nutrititional}
                   <span className="kcal">KCAL</span>
                 </h1>
@@ -120,10 +124,12 @@ const Preparation = () => {
               </div>
               <div className="container-preparation">
                 <ol>
-                  {product.preparation.map((preparation) => (
-                    <li>
+                  {product.preparation.map((preparation, i) => (
+                    <div className="li-preparation" key={i}>
+                      <li> </li>
                       <p className="text-preparation">{preparation}</p>
-                    </li>
+                    </div>
+                    
                   ))}
                 </ol>
               </div>
