@@ -1,15 +1,20 @@
 import React, { useState, useEffect } from "react";
-import "../styles/App.css"
+import "../styles/App.css";
 
 function Counter() {
-    const [count, setCount] = useState(0);
-    return (
-        <div className="counterContainer">
-            <div> Like: {count}</div>
-            <div className="counter">
-              <button onClick={() => setCount( count + 1 )}> Like </button>
-            </div>
-        </div>
-    );
+  const [count, setCount] = useState(0);
+  const addLike = () => {
+    let contador = count + 1;
+    setCount(contador);
+  };
+  return (
+    <div className="counterContainer">
+      <img />
+      <div>{count}</div>
+      <div className="counter">
+        <button onClick={addLike}> Like </button>
+      </div>
+    </div>
+  );
 }
 export default Counter;
