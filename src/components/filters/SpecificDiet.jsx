@@ -18,6 +18,28 @@ const SpecificDiet = () => {
     };
   }, [setFilterDiet]);
 
+  const handleClick = () => {
+    setFilterDiet("sinGluten");
+    document.getElementById("btnGluten").classList.add("btn-active");
+    document.getElementById("btnVegan").classList.remove("btn-active");
+    document.getElementById("btnVegetarian").classList.remove("btn-active");
+  }
+
+  const handleClickVege = () => {
+    setFilterDiet("vegetariana");
+    document.getElementById("btnVegetarian").classList.add("btn-active");
+    // e.target.classList.add("btn-active");
+    document.getElementById("btnGluten").classList.remove("btn-active");
+    document.getElementById("btnVegan").classList.remove("btn-active");
+  }
+
+  const handleClickVegan = () => {
+    setFilterDiet("vegana");
+    document.getElementById("btnVegan").classList.add("btn-active");
+    document.getElementById("btnGluten").classList.remove("btn-active");
+    document.getElementById("btnVegetarian").classList.remove("btn-active");
+  }
+
   return (
     <div className="container-filters">
 
@@ -31,32 +53,35 @@ const SpecificDiet = () => {
       <div className="container-btn-filter">
         <button
           className="btn-filter"
+          id="btnVegetarian"
           active={filterDiet ? "vegetariana" : undefined}
-          onClick={() => setFilterDiet("vegetariana")}
+          onClick={() => handleClickVege()}
         >
           {" "}
           <span>
             <img src={VegetarianIcon} alt="Icono vegetariano" />
           </span>{" "}
-          VEGETARIANA
+          <h1 className="diet-name">VEGETARIANA</h1>
         </button>
 
         <button
           className="btn-filter"
+          id="btnVegan"
           active={filterDiet ? "vegana" : undefined}
-          onClick={() => setFilterDiet("vegana")}
+          onClick={() => handleClickVegan()}
         >
           {" "}
           <span>
             <img src={VeganIcon} alt="Icono vegano" />
           </span>{" "}
-          VEGANA
+          <h1 className="diet-name">VEGANA</h1>
         </button>
 
         <button
           className="btn-filter"
+          id="btnGluten"
           active={filterDiet ? "sinGluten" : undefined}
-          onClick={() => setFilterDiet("sinGluten")}
+          onClick={() => handleClick()}
         >
           {" "}
           <span>
@@ -66,7 +91,7 @@ const SpecificDiet = () => {
               className="gluten-free-icon"
             />
           </span>{" "}
-          SIN GLUTEN
+          <h1 className="diet-name">SIN GLUTEN</h1>
         </button>
       </div>
 
