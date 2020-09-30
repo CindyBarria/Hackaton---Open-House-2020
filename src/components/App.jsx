@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Category from "./filters/Category";
 import Home from "./Home";
 import Preparation from "./Preparation";
@@ -17,8 +17,10 @@ import ScrollToTop from "./ScrollToTop";
 const App = () => {
   return (
     <div>
-      <img src={MenuHeader} alt="" />
       <Router>
+        <Link to="/">
+          <img src={MenuHeader} alt="" />
+        </Link>
         <ScrollToTop />
         <Switch>
           <Route path="/" exact>

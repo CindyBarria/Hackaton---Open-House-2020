@@ -83,7 +83,6 @@ const Preparation = () => {
               </div>
               <div>
                 <img src={product.img} alt="" className="img-preparation" />
-
                 <Counter />
               </div>
               <div className="container-box">
@@ -118,8 +117,8 @@ const Preparation = () => {
                 <h1 className="nutritional-preparation">
                   {product.nutrititional}
                   <span className="kcal">KCAL</span>
+                  <img src={ArrowDown} alt="" style={{ padding: "7%" }} />
                 </h1>
-                <img src={ArrowDown} alt="" style={{ padding: "5%" }} />
               </div>
               <div className="container-video">
                 <h1 className="preparation-title">PREPARACIÓN</h1>
