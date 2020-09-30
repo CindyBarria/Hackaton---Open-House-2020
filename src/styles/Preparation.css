@@ -6,7 +6,18 @@
   color: #525759;
   justify-content: center;
   align-items: flex-end;
-  height: 16vh;
+  height: 10vh;
+}
+h1.recipe-name {
+  color: #ce7da6;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  margin: 3% 0% 0% 0%;
+  text-transform: uppercase;
+  
 }
 .icon-difficulty {
   width: 31%;
@@ -16,13 +27,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0% 3% 0% 0%;
+  width: 28%;
 }
 h1.info-top-img,
 span.minuts {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   color: #525759;
   text-transform: uppercase;
@@ -33,19 +44,20 @@ span.minuts {
   align-items: center;
   justify-content: space-around;
   border-left: 1px solid #575c5e6b;
-  padding: 0% 3% 0% 3%;
+  /* padding: 0% 2% 0% 2%; */
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   text-align: center;
   color: #525759;
   text-transform: uppercase;
+  width: 25%;
 }
 .portions-preparation {
   display: flex;
   flex-direction: column;
   border-left: 1px solid #575c5e6b;
-  padding: 0% 0% 0% 3%;
+  padding: 0% 3% 0% 3%;
   align-items: center;
   font-style: normal;
   font-weight: 500;
@@ -53,13 +65,15 @@ span.minuts {
   text-align: center;
   color: #525759;
   text-transform: uppercase;
+  width: 25%;
 }
 .img-preparation {
-  width: 82%;
+  width: 77%;
   max-width: 500px;
-  height: 35vh;
+  height: 33vh;
   border-radius: 20px;
-  margin: 8%;
+  /*margin: 6%;*/
+  margin: 4% 0% 6% 10%
 }
 .container-box {
   background: #525759;

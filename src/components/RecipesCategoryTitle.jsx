@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import "../styles/Recipes.css";
 import { ProductContext } from "../context/ProductProvider";
 
@@ -7,7 +7,7 @@ const RecipesCategoryTitle = () => {
     const { todasRecetas } = React.useContext(ProductContext);
 
     return (
-        <Fragment>
+        <div className="container-title-recipes">
             {todasRecetas.map((product) =>
         product.filtered === true ? (
           <h1 className="title-recipes" key={product.id}>
@@ -18,7 +18,7 @@ const RecipesCategoryTitle = () => {
         )
       )} 
             
-        </Fragment>
+        </div>
     )
 }
 

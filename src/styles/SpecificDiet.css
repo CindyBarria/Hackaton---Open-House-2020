@@ -9,6 +9,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin: -4px 0 0 0;
 }
 
 
@@ -82,7 +83,7 @@ img.gluten-free-icon {
     width: 20px;
 }
 img.img-difficulty {
-    width: 40px;
+    width: 46px;
 }
 
 a.diet-name {
@@ -101,7 +102,7 @@ a.diet-name {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 85%;
-    height: 80px;
+    height: 60px;
 }
 
 .btn-back {
