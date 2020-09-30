@@ -1,8 +1,18 @@
-import React, {Fragment} from "react";
+import React, {Fragment, useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../styles/Recipes.css";
+import { ProductContext } from "../context/ProductProvider";
 
 function ButtonFindHere() {
+  const { setFilterDifficulty, setFilterDiet } = React.useContext(ProductContext);
+
+   useEffect(() => {
+        return () => {
+          setFilterDifficulty("");
+          setFilterDiet("");
+        };
+      }, [setFilterDifficulty, setFilterDiet]);
+
   return (
     <Fragment>
 

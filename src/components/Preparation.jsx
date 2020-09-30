@@ -12,7 +12,6 @@ import Share from "../assets/compartir.png";
 import Download from "../assets/descargar.png";
 import Add from "../assets/agregar.png";
 import ArrowDown from "../assets/arrow-down.png";
-import Like from "../assets/Corazon.png";
 import ReactPlayer from "react-player";
 import Counter from "./counter";
 

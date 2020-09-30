@@ -142,10 +142,10 @@ const recetas = [
       "En una fuente de vidrio incorporar el caramelo y extender. Sobre éste vertemos la mezcla de leche con huevos batidos de la olla con un colador y luego llevamos al horno por 45 minutos a 180°",
       "Una vez lista la leche asada, retiramos del horno con cuidado para cortar en trozos cuadrados y emplatamos decorando con rodajas de naranja",
     ],
-    difficulty: "Desafiante",
+    difficulty: "Fácil",
     time: "60",
     portions: "4",
-    nutrititional: "193",
+    nutrititional: "180",
     img:
       "https://i.ibb.co/y5s6KTm/recetas-82c0351d357aef84fedf1d7dc5cbbd48.jpg",
     category: ["postresYDulces"],
@@ -168,7 +168,7 @@ const recetas = [
       "Sobre una lata de horno, con papel mantequilla espolvorea la mitad del coco rallado y dispone la masa esparciéndola formando un rectángulo, cubriendo con el resto del coco, lleva a horno pre-calentado durante 10 minutos a 200 °C. Hornea a 180°C durante 18 a 20 minutos, o bien hasta dorar levemente.",
       "Retira del horno y deja enfriar. Corta rectángulos de 10 cm x 3 cm. Guárdalo envueltos en papel metálico o plástico por unidades o bien en un frasco de vidrio con tapa. Recuerda que la porción sugerida es de una porción por persona.",
     ],
-    difficulty: "Fácil",
+    difficulty: "Intermedio",
     time: "35",
     portions: "4",
     nutrititional: "244",
@@ -208,7 +208,7 @@ const recetas = [
   },
   {
     id: "11",
-    title: "Acompañamientos",
+    title: "Agregados",
     name: "Pan amasado",
     ingredients: [
       "Harina 1 kg",
@@ -228,7 +228,7 @@ const recetas = [
     portions: "4",
     nutrititional: "",
     img: "https://i.ibb.co/y42G4dt/Pan-amasado-En-Mi-Cocina-Hoy.jpg",
-    category: ["acompañamientos"],
+    category: ["agregados"],
     diet: [],
   },
   {
@@ -256,7 +256,7 @@ const recetas = [
     nutrititional: "",
     img:
       "https://i.ibb.co/d2ztxWN/F-CIL-Y-ADICTIVO-ENSALADA-TIBIA-DE-BR-COLI-AJO-Y-NUECES.jpg",
-    category: ["acompañamientos"],
+    category: ["agregados"],
     diet: ["vegana"],
   },
   {

@@ -9,13 +9,13 @@ import MediumIcon from "../assets/Medium.png";
 import ChallengingIcon from "../assets/Challenging.png";
 import Like from "../assets/Corazon.png";
 
-const Recipes = () => {
-  const { todasRecetas, clickProduct } = React.useContext(ProductContext);
+const RecipesForYou = () => {
+    const { todasRecetas, clickProduct } = React.useContext(ProductContext);
 
-  return (
-    <div className="container-recipes">
+    return (
+        <div className="container-recipes">
       <div className="container-text">
-        <h1 className="title-recipesTwo">Recetas</h1>
+        <h1 className="title-recipesThree">Para ti</h1>
       </div>
       {todasRecetas.map(
         (product) =>
@@ -67,7 +67,8 @@ const Recipes = () => {
         <img src={bannerInferior} alt="" style={{ marginBottom: "-4px" }} />
       </footer>
     </div>
-  );
-};
+    )
+}
 
-export default Recipes;
+export default RecipesForYou;
+

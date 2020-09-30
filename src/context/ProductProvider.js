@@ -9,6 +9,7 @@ const ProductProvider = (props) => {
   const [filter, setFilter] = React.useState("all");
   const [filterDiet, setFilterDiet] = React.useState("");
   const [preparacion, setPreparacion] = React.useState([]);
+  const [filterDifficulty, setFilterDifficulty] = React.useState("");
 
   //useEffect ---------------------------------------------
   React.useEffect(() => {
@@ -22,10 +23,11 @@ const ProductProvider = (props) => {
       ...p,
       filtered: filter ? p.category.includes(filter) : true, // !filter || p.category.includes(filter)
       filteredD: filterDiet ? p.diet.includes(filterDiet) : true,
+      filteredDifficulty: filterDifficulty ? p.difficulty.includes(filterDifficulty) : true,
     }));
 
     setRecetas(filtered);
-  }, [filter, filterDiet]);
+  }, [filter, filterDiet, filterDifficulty]);
 
   const clickProduct = (product) => {
     let receta = {
@@ -54,6 +56,8 @@ const ProductProvider = (props) => {
         clickProduct,
         preparacion,
         setPreparacion,
+        filterDifficulty,
+        setFilterDifficulty,
       }}
     >
       {props.children}

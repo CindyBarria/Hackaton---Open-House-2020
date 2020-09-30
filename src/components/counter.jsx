@@ -3,24 +3,28 @@ import "../styles/App.css";
 import Like from "../assets/like.png";
 import Unlike from "../assets/Corazon.png";
 import fondoLike from "../assets/ventanaLike.png";
+import '../styles/Counter.css';
 
 function Counter() {
-  const [likes, setLikes] = useState(0);
+  const [likes, setLikes] = useState(300);
   console.log(likes);
-  useEffect(() => {
-    addLike();
-  }, []);
+  
   const addLike = () => {
     let like = likes + 1;
     setLikes(like);
   };
+
+  useEffect(() => {
+    addLike();
+  }, []);
+
   return (
     <div className="counterContainer">
       {likes.lenght === 0 ? (
         <Fragment>
           <div>
             <img src={fondoLike} alt="" />
-            <p className="likes"> {likes}</p>
+            <h1 className="likes"> {likes}</h1>
           </div>
           <div className="counter">
             <button className="button-counter" onClick={() => addLike()}>
@@ -28,11 +32,11 @@ function Counter() {
             </button>
           </div>
         </Fragment>
-      ) : likes === 1 ? (
+      ) : likes === 300 ? (
         <Fragment>
           <div>
             <img src={fondoLike} alt="" />
-            <p className="likes"> {likes}</p>
+            <h1 className="likes"> {likes}</h1>
           </div>
           <div className="counter">
             <button className="button-counter" onClick={() => addLike()}>
@@ -40,11 +44,11 @@ function Counter() {
             </button>
           </div>
         </Fragment>
-      ) : likes > 1 ? (
+      ) : likes > 300 ? (
         <Fragment>
           <div>
             <img src={fondoLike} alt="" />
-            <p className="likes"> {likes}</p>
+            <h1 className="likes"> {likes}</h1>
           </div>
           <div className="counter">
             <button className="button-counter" onClick={() => addLike()}>
