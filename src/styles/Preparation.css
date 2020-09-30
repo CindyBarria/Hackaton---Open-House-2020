@@ -173,9 +173,11 @@ span.minuts {
   background: white;
   justify-content: center;
   align-items: center;
-  width: 25%;
-  height: 12vh;
-  border-radius: 62px;
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;

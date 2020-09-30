@@ -129,11 +129,11 @@ const recetas = [
     title: "",
     name: "Leche asada",
     ingredients: [
-      "1L. Leche sin lactosa Colun  ",
-      "1 Huevo grande blanco Unimarc  ",
-      "1 kg Azúcar granulada Iansa  ",
-      "2 Naranjas  ",
-      "15 grs Canela molida Gourmet  ",
+      "1L. Leche sin lactosa Colun",
+      "6 Huevos grandes blanco Unimarc",
+      "2 Tazas de azúcar granulada Iansa",
+      "2 Naranjas",
+      "15 Grs. Canela molida Gourmet",
     ],
     preparation: [
       "Calentar 500 cc de leche y una taza de azúcar en una olla a fuego bajo, revolver hasta que los cristales de azúcar se hayan diluido. En una fuente aparte, agregar 500 cc de leche, 6 huevos y batimos por 15 minutos",
