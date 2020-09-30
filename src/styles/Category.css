@@ -1,14 +1,12 @@
-/* vista categorias */
-
-.leadTittle{
-  color: #0093AD;
+.leadTittle {
+  color: #0093ad;
   text-align: center;
   font-size: 35px;
   margin: 9% 0% 0% 0%;
   text-transform: uppercase;
 }
 
-.categoryTittle{
+.categoryTittle {
   color: #525759;
   text-align: center;
   font-size: 25px;
@@ -16,71 +14,36 @@
   text-transform: uppercase;
 }
 
-.categoryButtons{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
-
+.categoryButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0% 10% 0%;
+  position: relative;
+}
+.img-category {
+  width: 80%;
+  max-width: 500px;
+  height: 35vh;
+  border-radius: 20px;
 }
 
-    .chileanCuisine{
-        background-image:url(../assets/Categoria-1.jpg);
-        background-repeat:no-repeat;
-        background-size: contain;
-        width: 69%;
-        height: 27vh;
-        border-radius: 13%;  
-    } 
-     .chileanCuisine .chileanCuisineText{
-         background-color: #E56F2D;
-     }
+.category-name {
+  width: 80%;
+  margin-top: -14%;
+  height: 8vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 0px 0px 20px 20px;
+}
 
-    .kidsCuisine{
-        background-image:url(../assets/Categoria-2.jpg);
-        background-repeat:no-repeat;
-        background-size: 100% 80%;
-        width: 69%;
-        height: 27vh;
-        border-radius: 13%;
-        text-decoration: none;
-    }
-
-    .dessertsSweets{
-        background-image:url(../assets/Categoria-3.jpg);
-        background-repeat:no-repeat;
-        background-size: 100% 80%;
-        width: 69%;
-        height: 27vh;
-        border-radius: 13%;
-        text-decoration: none;
-    }
-
-    .sides{
-        background-image:url(../assets/Categoria-4.jpg);
-        background-repeat:no-repeat;
-        background-size: 100% 80%;
-        width: 69%;
-        height: 27vh;
-        border-radius: 13%;
-        text-decoration: none;
-    }
-
-    .backgroundDishes{
-        background-image:url(../assets/Categoria-5.jpg);
-        background-repeat:no-repeat;
-        background-size: 100% 80%;
-        width: 69%;
-        height: 27vh;
-        border-radius: 13%;
-    }
-
-    .creamsSoups{
-        background-image:url(../assets/Categoria-6.jpg);
-        background-repeat:no-repeat;
-        background-size: 100% 80%;
-        width: 69%;
-        height: 27vh;
-        border-radius: 13%;
-
-    }
+.button-category {
+  background: none;
+  border: none;
+}
