@@ -3,12 +3,12 @@ import "../styles/App.css";
 import Like from "../assets/like.png";
 import Unlike from "../assets/Corazon.png";
 import fondoLike from "../assets/ventanaLike.png";
-import '../styles/Counter.css';
+import "../styles/Counter.css";
 
 function Counter() {
   const [likes, setLikes] = useState(300);
   console.log(likes);
-  
+
   const addLike = () => {
     let like = likes + 1;
     setLikes(like);
@@ -20,7 +20,7 @@ function Counter() {
 
   return (
     <div className="counterContainer">
-      {likes.lenght === 0 ? (
+      {likes.lenght === 300 ? (
         <Fragment>
           <div>
             <img src={fondoLike} alt="" />
@@ -32,7 +32,7 @@ function Counter() {
             </button>
           </div>
         </Fragment>
-      ) : likes === 300 ? (
+      ) : likes === 301 ? (
         <Fragment>
           <div>
             <img src={fondoLike} alt="" />
