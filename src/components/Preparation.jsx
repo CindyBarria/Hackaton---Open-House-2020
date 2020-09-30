@@ -123,7 +123,7 @@ const Preparation = () => {
                 <h1 className="preparation-title">PREPARACIÓN</h1>
                 <div className="video">
                   <ReactPlayer
-                    width={350}
+                    width={300}
                     height={150}
                     url="https://www.youtube.com/watch?v=JoxYdNF_Vr8&feature=emb_title"
                     controls={true}

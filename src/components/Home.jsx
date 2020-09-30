@@ -50,12 +50,17 @@ const Home = () => {
         <p style={{ marginBottom: "4%" }}>
           Consejos esenaciales y muy útiles para tu día a día
         </p>
+        <div className="react-player-wrapper">
         <ReactPlayer
-          width={350}
-          height={212}
+        className="react-player"
+          width={300}
+          height={232}
           url="https://www.youtube.com/watch?v=JoxYdNF_Vr8&feature=emb_title"
           controls={true}
         />
+
+        </div>
+        
         <img src={Carrusel} alt="" style={{ marginTop: "4%" }} />
         <button className="see-tips">Ver tips</button>
         <img src={BannerInferiorHome} alt="" style={{ marginBottom: "-4px" }} />
