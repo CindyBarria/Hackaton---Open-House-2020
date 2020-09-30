@@ -42,7 +42,7 @@ const Preparation = () => {
         {preparacion.map((product) =>
           preparacion.length > 0 ? (
             <div key={product.id}>
-              <h1 className="title-recipes">{product.name}</h1>
+              <h1 className="recipe-name">{product.name}</h1>
               <div className="container-info-preparation">
                 <div className="difficulty-preparation">
                   {product.difficulty === "Fácil" ? (
