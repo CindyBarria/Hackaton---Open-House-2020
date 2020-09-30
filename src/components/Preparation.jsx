@@ -14,6 +14,7 @@ import Add from "../assets/agregar.png";
 import ArrowDown from "../assets/arrow-down.png";
 import ReactPlayer from "react-player";
 import Counter from "./counter";
+import Carrusel from "./Carrusel";
 
 const Preparation = () => {
   const { preparacion, setPreparacion } = React.useContext(ProductContext);
@@ -94,6 +95,7 @@ const Preparation = () => {
                 </div>
               </div>
               <h1 className="ingredients-title">INGREDIENTES</h1>
+              <Carrusel />
               <div className="ingredient-div">
                 {product.ingredients.map((ingredients, i) => (
                   <div className="container-ingredients" key={i}>

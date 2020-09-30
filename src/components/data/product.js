@@ -129,7 +129,7 @@ const recetas = [
     title: "",
     name: "Leche asada",
     ingredients: [
-      "1L. Leche sin lactosa Colun  ",
+      "1Lt. Leche sin lactosa Colun  ",
       "1 Huevo grande blanco Unimarc  ",
       "1 kg Azúcar granulada Iansa  ",
       "2 Naranjas  ",
