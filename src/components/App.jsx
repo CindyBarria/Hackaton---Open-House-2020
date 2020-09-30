@@ -11,8 +11,11 @@ import Footer from "../assets/footer.png";
 import SpecificDiet from "../components/filters/SpecificDiet";
 import ButtonFindHere from "./ButtonFindHere";
 import BannerHeader from "./BannerHeader";
+import BannerHeader2 from "./BannerHeader2";
 import RecipesCategoryTitle from "./RecipesCategoryTitle";
 import ScrollToTop from "./ScrollToTop";
+import DifficultyLevel from "./filters/DifficultyLevel";
+import RecipesForYou from "./RecipesForYou";
 
 const App = () => {
   return (
@@ -41,6 +44,19 @@ const App = () => {
             <ProductProvider>
               <SpecificDiet />
               <Recipes />
+            </ProductProvider>
+          </Route>
+          <Route path="/difficulty">
+            <ProductProvider>
+              <DifficultyLevel />
+              <Recipes />
+            </ProductProvider>
+          </Route>
+          <Route path="/recipesforyou">
+            <ProductProvider>
+              <BannerHeader2/>
+              <RecipesCategoryTitle />
+              <RecipesForYou />
             </ProductProvider>
           </Route>
           <Route path="/preparation">

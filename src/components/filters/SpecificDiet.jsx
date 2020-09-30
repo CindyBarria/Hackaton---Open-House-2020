@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../../styles/SpecificDiet.css";
 import { ProductContext } from "../../context/ProductProvider";
 import { Link } from "react-router-dom";
@@ -11,12 +11,6 @@ import RecipesCategoryTitle from "../RecipesCategoryTitle";
 
 const SpecificDiet = () => {
   const { filterDiet, setFilterDiet } = React.useContext(ProductContext);
-
-  useEffect(() => {
-    return () => {
-      setFilterDiet("");
-    };
-  }, [setFilterDiet]);
 
   const handleClick = () => {
     setFilterDiet("sinGluten");
@@ -44,9 +38,9 @@ const SpecificDiet = () => {
     <div className="container-filters">
 
       <div className="container-banner-diet">
-        <img src={ImgLeft} alt="" width={70}/>
+        <img src={ImgLeft} alt="" width={70} className="banner-left"/>
         <RecipesCategoryTitle />
-        <img src={ImgRight} alt="" width={70}/>
+        <img src={ImgRight} alt="" width={70} className="banner-right"/>
       </div>
       <h2 className="title-container-diet">¿Sigues alguna dieta?</h2>
 
@@ -101,7 +95,7 @@ const SpecificDiet = () => {
         </button>
 
         <button className="btn-next">
-          <Link to="/recipes">Siguiente</Link>
+          <Link to="/difficulty">Siguiente</Link>
         </button>
       </div>
     </div>

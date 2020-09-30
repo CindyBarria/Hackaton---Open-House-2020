@@ -109,6 +109,15 @@ span.span-minuts {
   padding: 2%;
   text-transform: uppercase;
 }
+.title-recipesThree {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #525759;
+  padding: 2%;
+  text-transform: uppercase;
+}
 
 /* boton para personalizar receta */
 .container-button-find {

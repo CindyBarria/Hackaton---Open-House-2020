@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import "../../styles/Category.css";
 import { ProductContext } from "../../context/ProductProvider";
@@ -7,7 +8,14 @@ import Buscador from "../../assets/Buscador.png";
 import CategoriasBannerInferior from "../../assets/CategoriasBannerInferior.png";
 
 const Category = () => {
-  const { filter, setFilter } = React.useContext(ProductContext);
+  const { filter, setFilter, setFilterDifficulty, setFilterDiet } = React.useContext(ProductContext);
+
+   useEffect(() => {
+        return () => {
+          setFilterDifficulty("");
+          setFilterDiet("");
+        };
+      }, [setFilterDifficulty, setFilterDiet]); 
 
   return (
     <div className="categoryContainer">
@@ -42,10 +50,10 @@ const Category = () => {
           <Link to="/recipes"> Postres y Dulces</Link>
         </button>
         <button className = "sides"
-          active={filter ? "acompañamientos" : undefined}
-          onClick={() => setFilter("acompañamientos")}
+          active={filter ? "agregados" : undefined}
+          onClick={() => setFilter("agregados")}
         >
-          <Link to="/recipes"> Acomapañamientos</Link>
+          <Link to="/recipes"> Agregados</Link>
         </button>
         <button className = "backgroundDishes"
           active={filter ? "platosDeFondo" : undefined}
