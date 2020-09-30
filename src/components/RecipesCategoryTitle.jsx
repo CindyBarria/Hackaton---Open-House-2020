@@ -1,25 +1,25 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from "react";
 import "../styles/Recipes.css";
 import { ProductContext } from "../context/ProductProvider";
 
 const RecipesCategoryTitle = () => {
+  const { todasRecetas } = React.useContext(ProductContext);
 
-    const { todasRecetas } = React.useContext(ProductContext);
-
-    return (
-        <Fragment>
-            {todasRecetas.map((product) =>
+  return (
+    <div className="container-title-recipes">
+      {todasRecetas.map((product) =>
         product.filtered === true ? (
-          <h1 className="title-recipes" key={product.id}>
-            {product.title}
-          </h1>
+          <Fragment>
+            <h1 className="title-recipes" key={product.id}>
+              {product.title}
+            </h1>
+          </Fragment>
         ) : (
           ""
         )
-      )} 
-            
-        </Fragment>
-    )
-}
+      )}
+    </div>
+  );
+};
 
 export default RecipesCategoryTitle;

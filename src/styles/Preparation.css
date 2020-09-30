@@ -5,8 +5,20 @@
   font-size: 10px;
   color: #525759;
   justify-content: center;
-  align-items: flex-end;
-  height: 16vh;
+  align-items: center;
+  height: 10vh;
+  margin: 3% 0% -4% -6%;
+}
+h1.recipe-name {
+  color: #ce7da6;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  margin: 3% 0% 0% 0%;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .icon-difficulty {
   width: 31%;
@@ -16,16 +28,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0% 3% 0% 0%;
+  width: 28%;
 }
 h1.info-top-img,
 span.minuts {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   color: #525759;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .time-preparation {
   display: flex;
@@ -33,19 +46,20 @@ span.minuts {
   align-items: center;
   justify-content: space-around;
   border-left: 1px solid #575c5e6b;
-  padding: 0% 3% 0% 3%;
+  /* padding: 0% 2% 0% 2%; */
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   text-align: center;
   color: #525759;
   text-transform: uppercase;
+  width: 25%;
 }
 .portions-preparation {
   display: flex;
   flex-direction: column;
   border-left: 1px solid #575c5e6b;
-  padding: 0% 0% 0% 3%;
+  padding: 0% 3% 0% 3%;
   align-items: center;
   font-style: normal;
   font-weight: 500;
@@ -53,18 +67,20 @@ span.minuts {
   text-align: center;
   color: #525759;
   text-transform: uppercase;
+  width: 25%;
 }
 .img-preparation {
-  width: 82%;
+  width: 77%;
   max-width: 500px;
-  height: 35vh;
+  height: 33vh;
   border-radius: 20px;
-  margin: 8%;
+  /*margin: 6%;*/
+  margin: 4% 0% 6% 10%;
 }
 .container-box {
   background: #525759;
   color: white;
-  height: 41vh;
+  height: 43vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -84,7 +100,7 @@ span.minuts {
 .icon-share {
   display: flex;
   flex-direction: row;
-  padding: 8% 20% 8% 9%;
+  padding: 3% 20% 8% 9%;
 }
 .ingredients-title,
 .nutritional-title,
@@ -95,6 +111,7 @@ span.minuts {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
+  font-weight: bold;
 }
 .ingredient-div {
   display: flex;
@@ -108,6 +125,7 @@ span.minuts {
 }
 .text-ingredients {
   padding: 0% 2% 6% 15%;
+  margin-bottom: 0rem;
 }
 .img-add {
   margin-right: 2%;
@@ -159,9 +177,11 @@ span.minuts {
   background: white;
   justify-content: center;
   align-items: center;
-  width: 25%;
-  height: 12vh;
-  border-radius: 62px;
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
   font-style: normal;
   font-weight: 500;
   font-size: 22px;

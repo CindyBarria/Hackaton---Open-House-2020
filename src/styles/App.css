@@ -22,6 +22,7 @@ p {
 h1 {
   font-family: "clarendon regular";
   text-decoration: none;
+  font-weight: bold;
 }
 .counterContainer {
   position: absolute;
@@ -30,7 +31,7 @@ h1 {
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
-  margin: -68% 0% 0% 72%;
+  margin: -61% 0% 0% 68%;
 }
 .button-counter {
   background: none;

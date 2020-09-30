@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import bannerSuperior from "../assets/BannerSuperior.png";
 import flecha from "../assets/Vector.png";
@@ -6,8 +6,8 @@ import "../styles/Recipes.css";
 
 const BannerHeader = () => {
   return (
-    <div>
-      <img src={bannerSuperior} alt="" style={{ marginTop: "-4px" }} />
+    <Fragment>
+      <img src={bannerSuperior} alt="" style={{ marginTop: "-14px" }} />
       <p className="back">
         <img src={flecha} alt="" className="arrow" />
         <Link
@@ -18,7 +18,7 @@ const BannerHeader = () => {
           Volver
         </Link>
       </p>
-    </div>
+    </Fragment>
   );
 };
 

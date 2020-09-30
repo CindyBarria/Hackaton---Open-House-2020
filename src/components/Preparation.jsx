@@ -43,7 +43,7 @@ const Preparation = () => {
         {preparacion.map((product) =>
           preparacion.length > 0 ? (
             <div key={product.id}>
-              <h1 className="title-recipes">{product.name}</h1>
+              <h1 className="recipe-name">{product.name}</h1>
               <div className="container-info-preparation">
                 <div className="difficulty-preparation">
                   {product.difficulty === "Fácil" ? (
@@ -107,10 +107,10 @@ const Preparation = () => {
               </div>
               <div className="container-button-buy">
                 <button className="add">
-                  <p> Agregar al Carro</p>
+                  <p style={{ marginBottom: "0rem" }}> Agregar al Carro</p>
                 </button>
                 <button className="buy">
-                  <p>Comprar</p>
+                  <p style={{ marginBottom: "0rem" }}>Comprar</p>
                 </button>
               </div>
               <div className="container-nutritional">
@@ -125,7 +125,7 @@ const Preparation = () => {
                 <h1 className="preparation-title">PREPARACIÓN</h1>
                 <div className="video">
                   <ReactPlayer
-                    width={350}
+                    width={300}
                     height={150}
                     url="https://www.youtube.com/watch?v=JoxYdNF_Vr8&feature=emb_title"
                     controls={true}

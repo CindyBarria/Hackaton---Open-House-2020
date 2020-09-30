@@ -4,6 +4,7 @@
   font-size: 35px;
   margin: 9% 0% 0% 0%;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .categoryTittle {
@@ -12,6 +13,7 @@
   font-size: 25px;
   font-family: "clarendon regular";
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .categoryButtons {

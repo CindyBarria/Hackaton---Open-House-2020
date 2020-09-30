@@ -16,6 +16,7 @@ import RecipesCategoryTitle from "./RecipesCategoryTitle";
 import ScrollToTop from "./ScrollToTop";
 import DifficultyLevel from "./filters/DifficultyLevel";
 import RecipesForYou from "./RecipesForYou";
+import Search from "./Search";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
             <ProductProvider>
               <BannerHeader />
               <RecipesCategoryTitle />
+              <Search />
               <ButtonFindHere />
               <Recipes />
             </ProductProvider>
@@ -56,7 +58,7 @@ const App = () => {
           </Route>
           <Route path="/recipesforyou">
             <ProductProvider>
-              <BannerHeader2/>
+              <BannerHeader2 />
               <RecipesCategoryTitle />
               <RecipesForYou />
             </ProductProvider>
