@@ -1,75 +1,160 @@
 import React from "react";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/Category.css";
 import { ProductContext } from "../../context/ProductProvider";
 import CategoriasBannerSuperior from "../../assets/CategoriasBannerSuperior.png";
 import Buscador from "../../assets/Buscador.png";
 import CategoriasBannerInferior from "../../assets/CategoriasBannerInferior.png";
+import Categoria1 from "../../assets/Categoria-1.jpg";
+import Categoria2 from "../../assets/Categoria-2.jpg";
+import Categoria3 from "../../assets/Categoria-3.jpg";
+import Categoria4 from "../../assets/Categoria-4.jpg";
+import Categoria5 from "../../assets/Categoria-5.jpg";
+import Categoria6 from "../../assets/Categoria-6.jpg";
 
 const Category = () => {
-  const { filter, setFilter, setFilterDifficulty, setFilterDiet } = React.useContext(ProductContext);
+  const {
+    filter,
+    setFilter,
+    setFilterDifficulty,
+    setFilterDiet,
+  } = React.useContext(ProductContext);
 
-   useEffect(() => {
-        return () => {
-          setFilterDifficulty("");
-          setFilterDiet("");
-        };
-      }, [setFilterDifficulty, setFilterDiet]); 
+  useEffect(() => {
+    return () => {
+      setFilterDifficulty("");
+      setFilterDiet("");
+    };
+  }, [setFilterDifficulty, setFilterDiet]);
 
   return (
     <div className="categoryContainer">
+      <img
+        src={CategoriasBannerSuperior}
+        alt=""
+        style={{ marginTop: "-4px" }}
+      />
 
-      <img src={CategoriasBannerSuperior} alt="" style={{ marginTop: "-4px" }} />
+      <h1 className="leadTittle">
+        Ricas<br></br> recetas
+      </h1>
 
-      <h1 className="leadTittle">Ricas recetas</h1>
+      <img src={Buscador} alt="" style={{ margin: "6%" }} />
 
-      <img src={Buscador} alt="" style={{ marginLeft: "25px" }}  />
+      <h1 className="categoryTittle">Categorías</h1>
 
-      <h1 className="categoryTittle">Categorias</h1>
-  
-      <div className="categoryButtons">
-        <Link to="/recipes">
-            <button className = "chileanCuisine"
-              active={filter ? "cocinaChilena" : undefined}
-              onClick={() => setFilter("cocinaChilena")}
-            >
-            <h1 className="clileanCuisineText">Cocina Chilena</h1>
-            </button>
-        </Link>
-        <button className = "kidsCuisine"
-          active={filter ? "cocinaParaNiños" : undefined}
-          onClick={() => setFilter("cocinaParaNiños")}
-        >
-          <Link to="/recipes"> Cocina para Niños</Link>
-        </button>
-        <button className = "dessertsSweets"
-          active={filter ? "postresYDulces" : undefined}
-          onClick={() => setFilter("postresYDulces")}
-        > 
-          <Link to="/recipes"> Postres y Dulces</Link>
-        </button>
-        <button className = "sides"
-          active={filter ? "agregados" : undefined}
-          onClick={() => setFilter("agregados")}
-        >
-          <Link to="/recipes"> Agregados</Link>
-        </button>
-        <button className = "backgroundDishes"
-          active={filter ? "platosDeFondo" : undefined}
-          onClick={() => setFilter("platosDeFondo")}
-        >
-          <Link to="/recipes"> Platos de Fondo</Link>
-        </button>
-        <button className = "creamsSoups"
-          active={filter ? "sopasYCremas" : undefined}
-          onClick={() => setFilter("sopasYCremas")}
-        >
-          <Link to="/recipes"> Sopas y Cremas</Link>
-        </button>
+      <div>
+        <div>
+          <button
+            className="button-category"
+            active={filter ? "cocinaChilena" : undefined}
+            onClick={() => setFilter("cocinaChilena")}
+          >
+            <Link to="/recipes" style={{ textDecoration: "none" }}>
+              <div className="categoryButtons">
+                <img src={Categoria1} alt="" className="img-category" />
+                <h1 className="category-name" style={{ background: "#E56F2D" }}>
+                  Cocina Chilena
+                </h1>
+              </div>
+            </Link>
+          </button>
+        </div>
+        <div>
+          <button
+            className="button-category"
+            active={filter ? "cocinaParaNiños" : undefined}
+            onClick={() => setFilter("cocinaParaNiños")}
+          >
+            <Link to="/recipes" style={{ textDecoration: "none" }}>
+              {" "}
+              <div className="categoryButtons">
+                <img src={Categoria2} alt="" className="img-category" />
+                <h1 className="category-name" style={{ background: "#9B8DC0" }}>
+                  Cocina para Niños
+                </h1>
+              </div>
+            </Link>
+          </button>
+        </div>
+
+        <div>
+          <button
+            className="button-category"
+            active={filter ? "postresYDulces" : undefined}
+            onClick={() => setFilter("postresYDulces")}
+          >
+            <Link to="/recipes" style={{ textDecoration: "none" }}>
+              {" "}
+              <div className="categoryButtons">
+                <img src={Categoria3} alt="" className="img-category" />
+                <h1 className="category-name" style={{ background: "#CE7DA6" }}>
+                  Postres y Dulces
+                </h1>
+              </div>
+            </Link>
+          </button>
+        </div>
+
+        <div>
+          <button
+            className="button-category"
+            active={filter ? "agregados" : undefined}
+            onClick={() => setFilter("agregados")}
+          >
+            <Link to="/recipes" style={{ textDecoration: "none" }}>
+              {" "}
+              <div className="categoryButtons">
+                <img src={Categoria4} alt="" className="img-category" />
+                <h1 className="category-name" style={{ background: "#473074" }}>
+                  Agregados
+                </h1>
+              </div>
+            </Link>
+          </button>
+        </div>
+        <div>
+          <button
+            className="button-category"
+            active={filter ? "platosDeFondo" : undefined}
+            onClick={() => setFilter("platosDeFondo")}
+          >
+            <Link to="/recipes" style={{ textDecoration: "none" }}>
+              {" "}
+              <div className="categoryButtons">
+                <img src={Categoria5} alt="" className="img-category" />
+                <h1 className="category-name" style={{ background: "#AD4150" }}>
+                  Platos de fondo
+                </h1>
+              </div>
+            </Link>
+          </button>
+        </div>
+        <div>
+          <button
+            className="button-category"
+            active={filter ? "sopasYCremas" : undefined}
+            onClick={() => setFilter("sopasYCremas")}
+          >
+            <Link to="/recipes" style={{ textDecoration: "none" }}>
+              {" "}
+              <div className="categoryButtons">
+                <img src={Categoria6} alt="" className="img-category" />
+                <h1 className="category-name" style={{ background: "#D5937D" }}>
+                  Sopas y cremas
+                </h1>
+              </div>
+            </Link>
+          </button>
+        </div>
       </div>
       <footer>
-        <img src={CategoriasBannerInferior} alt="" style={{ marginBottom: "-4px" }} />
+        <img
+          src={CategoriasBannerInferior}
+          alt=""
+          style={{ marginBottom: "-4px" }}
+        />
       </footer>
     </div>
   );
