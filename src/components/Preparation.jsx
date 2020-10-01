@@ -32,7 +32,7 @@ const Preparation = () => {
 
   return (
     <div>
-      <img src={bannerSuperior} alt="" style={{ marginTop: "-4px" }} />
+      <img src={bannerSuperior} alt="" style={{ marginTop: "-4px" }} className="banner-fruits-top" />
       <p className="back">
         <img src={flecha} alt="" className="arrow" />
         <Link
@@ -167,7 +167,7 @@ const Preparation = () => {
         )}
       </div>
       <footer>
-        <img src={bannerInferior} alt="" style={{ marginBottom: "-4px" }} />
+        <img src={bannerInferior} alt="" style={{ marginBottom: "-2px" }} className="banner-fruits-bottom"/>
       </footer>
     </div>
   );

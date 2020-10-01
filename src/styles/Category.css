@@ -1,3 +1,8 @@
+.categoryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .leadTittle {
   color: #0093ad;
   text-align: center;
