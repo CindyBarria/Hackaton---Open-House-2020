@@ -18,7 +18,7 @@
 
 img.heart {
   position: absolute;
-  left: 270px;
+  left: 261px;
   top: 15px;
   z-index: 3;
 }
@@ -47,6 +47,7 @@ img.heart {
   align-items: center;
   font-size: 18px;
   letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 /*información de dificultad y tiempo por receta*/
@@ -63,26 +64,27 @@ img.heart {
   line-height: 23px;
   display: flex;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .difficulty-info {
   display: flex;
   width: 45%;
-  height: auto;
+  height: 5vh;
   padding: 2px;
   box-sizing: border-box;
 }
 
 .difficulty-info img {
   width: 28px;
-  margin-right: 10px;
+  margin: -4% 3% 0% 4%;
+  height: 5vh;
 }
 
 p.time-info {
   font-family: "clarendon regular";
   width: 45%;
-  height: auto;
+  height: 3vh;
   padding: 2px;
   box-sizing: border-box;
 }
@@ -103,6 +105,7 @@ span.span-minuts {
   text-align: center;
   text-transform: uppercase;
   width: 80%;
+  font-weight: bold;
 }
 
 .title-recipesTwo {
@@ -110,9 +113,10 @@ span.span-minuts {
   font-weight: 500;
   font-size: 22px;
   text-align: center;
-  color: #CE7DA6;
+  color: #ce7da6;
   padding: 2%;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .title-recipesThree {
   font-style: normal;
@@ -133,7 +137,7 @@ span.span-minuts {
 }
 
 .button-find {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 4px solid #c5c6c7;
   box-sizing: border-box;
   width: 265px;
@@ -187,7 +191,7 @@ span.span-minuts {
   font-weight: normal;
   font-size: 20px;
   line-height: 29px;
-  color: #0093AD;
+  color: #0093ad;
 }
 
 .container-text {

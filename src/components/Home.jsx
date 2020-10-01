@@ -8,13 +8,17 @@ import MenuSemanal from "../assets/menusemanal.png";
 import Tips from "../assets/tips.png";
 import ReactPlayer from "react-player";
 import Carrusel from "../assets/carrusel.png";
+import Buscador from "../assets/Buscador.png";
 const Home = () => {
   return (
     <div className="container-home">
       <img src={BannerSuperiorHome} alt="" style={{ marginTop: "-4px" }} />
       <h1 className="title-home">¡Hola!</h1>
+      <img src={Buscador} alt="" style={{ margin: "-1% 0% 7% 0%" }} />
       <div className="recipes-containerhome">
-        <h1 style={{ fontSize: "22px" }}>RECETAS EN CASA</h1>
+        <h1 style={{ fontSize: "22px", fontWeight: "bold" }}>
+          RECETAS EN CASA
+        </h1>
         <p className="p">
           Descubre las mejores recetas hechas para ti y toda tu familia.
         </p>
@@ -51,16 +55,15 @@ const Home = () => {
           Consejos esenaciales y muy útiles para tu día a día
         </p>
         <div className="react-player-wrapper">
-        <ReactPlayer
-        className="react-player"
-          width={300}
-          height={232}
-          url="https://www.youtube.com/watch?v=JoxYdNF_Vr8&feature=emb_title"
-          controls={true}
-        />
-
+          <ReactPlayer
+            className="react-player"
+            width={300}
+            height={232}
+            url="https://www.youtube.com/watch?v=JoxYdNF_Vr8&feature=emb_title"
+            controls={true}
+          />
         </div>
-        
+
         <img src={Carrusel} alt="" style={{ marginTop: "4%" }} />
         <button className="see-tips">Ver tips</button>
         <img src={BannerInferiorHome} alt="" style={{ marginBottom: "-4px" }} />

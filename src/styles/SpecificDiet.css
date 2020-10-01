@@ -1,146 +1,146 @@
 .container-filters {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .container-banner-diet {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: -4px 0 0 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: -4px 0 0 0;
+  height: 17vh;
 }
 
-
 .title-container-diet {
-    font-family: "clarendon regular";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #525759;
-    height: 49px;
+  font-family: "clarendon regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #525759;
+  height: 49px;
 }
 
 .container-btn-filter {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-filter {
-    width: 265px;
-    height: 68px;
-    background: #FFFFFF;
-    border: 4px solid #C5C6C7;
-    box-sizing: border-box;
-    border-radius: 100px;
-    margin-bottom: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 265px;
+  height: 68px;
+  background: #ffffff;
+  border: 4px solid #c5c6c7;
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-active {
-    width: 265px;
-    height: 68px;
-    background: #FFFFFF;
-    border: 4px solid #CE7DA6;
-    box-sizing: border-box;
-    border-radius: 100px;
-    margin-bottom: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 265px;
+  height: 68px;
+  background: #ffffff;
+  border: 4px solid #ce7da6;
+  box-sizing: border-box;
+  border-radius: 100px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 span.diet-span {
-    width: 22%;
+  width: 22%;
 }
 
 h1.diet-name {
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 17px;
-    color: #525759;
-    text-transform: uppercase;
-    width: 65%;
-    text-align: left;
-    padding: 2%;
-    box-sizing: border-box;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 17px;
+  color: #525759;
+  text-transform: uppercase;
+  width: 65%;
+  text-align: left;
+  padding: 2%;
+  box-sizing: border-box;
 }
 
 .btn-filter img {
-    width: 30px;
-    margin: 0 10px;
+  width: 30px;
+  margin: 0 10px;
 }
 
 img.gluten-free-icon {
-    width: 20px;
+  width: 20px;
 }
 img.img-difficulty {
-    width: 46px;
+  width: 46px;
 }
 
 a.diet-name {
-    font-family: 'clarendon regular';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 17px;
-    text-decoration: none;
-    color: #525759;
-    text-transform: uppercase;
+  font-family: "clarendon regular";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #525759;
+  text-transform: uppercase;
 }
 
 .container-btn-bn {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 85%;
-    height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85%;
+  height: 60px;
 }
 
 .btn-back {
-    width: 130px;
-    height: 40px;
-    background-color: #FFFFFF;
-    border: 2px solid #0093AD;
-    box-sizing: border-box;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
+  width: 130px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid #0093ad;
+  box-sizing: border-box;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-back a {
-    font-family: "apex sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    color: #0093AD;
-    text-decoration: none;
+  font-family: "apex sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #0093ad;
+  text-decoration: none;
 }
 
 .btn-next {
-    width: 130px;
-    height: 40px;
-    background: #0093AD;
-    border: 2px solid #0093AD;
-    box-sizing: border-box;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
+  width: 130px;
+  height: 40px;
+  background: #0093ad;
+  border: 2px solid #0093ad;
+  box-sizing: border-box;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .btn-next a {
-    font-family: "apex sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    color: #FFFFFF;
-    text-decoration: none;
+  font-family: "apex sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
 }

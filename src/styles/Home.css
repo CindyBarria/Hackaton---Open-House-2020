@@ -11,6 +11,7 @@
   color: #0093ad;
   padding: 7%;
   font-size: 35px;
+  font-weight: bold;
 }
 .recipes-containerhome {
   width: 82%;
@@ -19,7 +20,7 @@
   align-items: center;
   text-align: center;
   color: #525759;
-  height: 48vh;
+  height: 41vh;
 }
 .p {
   width: 81%;
@@ -63,12 +64,14 @@
 .title-menu,
 .title-tips {
   margin: 4% 0% 4% 0%;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .react-player-wrapper {
   position: relative;
   padding-top: 60%;
-  padding-left: 8%; 
+  padding-left: 8%;
   width: 100%;
   height: 7vh;
 }
@@ -78,5 +81,5 @@
   top: 0;
   border-radius: 20px;
   overflow: hidden;
-  
+  margin-left: -3%;
 }
