@@ -6,7 +6,7 @@ import Preparation from "./Preparation";
 import Recipes from "./Recipes";
 import "../styles/App.css";
 import ProductProvider from "../context/ProductProvider";
-import MenuHeader from "../assets/1_banner-verduras-superior.png";
+import MenuHeader from "../assets/Menu.png";
 import Footer from "../assets/footer.png";
 import SpecificDiet from "../components/filters/SpecificDiet";
 import ButtonFindHere from "./ButtonFindHere";
@@ -23,7 +23,7 @@ const App = () => {
     <div>
       <Router>
         <Link to="/">
-          <img src={MenuHeader} alt=""  className="banner-verdura-home"/>
+          <img src={MenuHeader} alt=""  className="menu-unimarc"/>
         </Link>
         <ScrollToTop />
         <Switch>
@@ -70,7 +70,7 @@ const App = () => {
           </Route>
         </Switch>
       </Router>
-      <img src={Footer} alt="" style={{ marginBottom: "-4px" }} />
+      <img src={Footer} alt="" style={{ marginBottom: "-4px" }} className="footer-img" />
     </div>
   );
 };

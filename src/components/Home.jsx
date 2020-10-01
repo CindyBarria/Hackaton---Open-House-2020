@@ -12,9 +12,9 @@ import Buscador from "../assets/Buscador.png";
 const Home = () => {
   return (
     <div className="container-home">
-      {/* <img src={BannerSuperiorHome} alt="" style={{ marginTop: "-4px" }} /> */}
+      <img src={BannerSuperiorHome} alt="" style={{ marginTop: "-1px" }} className="banner-vegetables-top"/>
       <h1 className="title-home">¡Hola!</h1>
-      <img src={Buscador} alt="" style={{ margin: "-1% 0% 7% 0%" }} />
+      <img src={Buscador} alt="" style={{ margin: "-1% 0% 7% 0%" }} className="search-img"/>
       <div className="recipes-containerhome">
         <h1 style={{ fontSize: "22px", fontWeight: "bold" }}>
           RECETAS EN CASA
@@ -32,11 +32,11 @@ const Home = () => {
         </button>
       </div>
 
-      <img src={BannerInferiorHome} alt="" style={{ marginBottom: "-4px" }} />
+      <img src={BannerInferiorHome} alt="" style={{ marginBottom: "-2px" }} className="banner-vegetables-bottom" />
       <img className="nacho" src={Nacho} alt="" />
       <div className="text-containerGray">
         <p>
-          En cada receta encontraras un video de Nacho explicandote paso a paso
+          En cada receta encontrarás un video de Nacho explicándote paso a paso
           toda la preparación.
         </p>
         <br></br>
@@ -45,7 +45,7 @@ const Home = () => {
       <div className="weekly-menu">
         <img src={MenuSemanal} alt="" />
         <h1 className="title-menu">MENÚ SEMANAL</h1>
-        <p>¡Recetas sencillas y faciles para toda la semana!</p>
+        <p>¡Recetas sencillas y fáciles para toda la semana!</p>
         <button className="see-menus">Ver menú</button>
       </div>
       <div className="tips">
@@ -64,10 +64,11 @@ const Home = () => {
           />
         </div>
 
-        <img src={Carrusel} alt="" style={{ marginTop: "4%" }} />
+        <img src={Carrusel} alt="" style={{ marginTop: "13px" }} />
         <button className="see-tips">Ver tips</button>
-        <img src={BannerInferiorHome} alt="" style={{ marginBottom: "-4px" }} />
+        
       </div>
+      <img src={BannerInferiorHome} alt="" style={{ marginBottom: "-2px" }} className="banner-vegetables-bottom" />
     </div>
   );
 };

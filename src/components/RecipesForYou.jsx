@@ -64,7 +64,7 @@ const RecipesForYou = () => {
           )
       )}
       <footer>
-        <img src={bannerInferior} alt="" style={{ marginBottom: "-4px" }} />
+        <img src={bannerInferior} alt="" style={{ marginBottom: "-2px" }} className="banner-fruits-bottom" />
       </footer>
     </div>
     )

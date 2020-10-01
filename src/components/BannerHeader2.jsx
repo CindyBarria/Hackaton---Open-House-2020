@@ -7,7 +7,7 @@ import "../styles/Recipes.css";
 const BannerHeader2 = () => {
     return (
         <div>
-            <img src={bannerSuperior} alt="" style={{ marginTop: "-4px" }} />
+            <img src={bannerSuperior} alt="" style={{ marginTop: "-1px" }} className="banner-fruits-top" />
             <p className="back">
                 <img src={flecha} alt="" className="arrow" />
                 <Link

@@ -30,17 +30,18 @@ const Category = () => {
 
   return (
     <div className="categoryContainer">
-      {/* <img
+      <img
         src={CategoriasBannerSuperior}
         alt=""
-        style={{ marginTop: "-4px" }}
-      /> */}
+        style={{ marginTop: "-1px" }}
+        className="banner-vegetables-top"
+      />
 
       <h1 className="leadTittle">
         Ricas<br></br> recetas
       </h1>
 
-      <img src={Buscador} alt="" style={{ margin: "6%" }} />
+      <img src={Buscador} alt="" style={{ margin: "6%" }} className="search-img" />
 
       <h1 className="categoryTittle">Categorías</h1>
 
@@ -153,7 +154,8 @@ const Category = () => {
         <img
           src={CategoriasBannerInferior}
           alt=""
-          style={{ marginBottom: "-4px" }}
+          style={{ marginBottom: "-2px" }}
+          className="banner-vegetables-bottom"
         />
       </footer>
     </div>
