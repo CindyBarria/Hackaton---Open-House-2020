@@ -19,6 +19,7 @@
 }
 .search-img {
   width: 306px;
+  height: 64px;
 }
 
 .recipes-containerhome {
@@ -52,7 +53,7 @@
   justify-content: center;
   margin: 13px 0% 26px 0%;
 }
-.banner-vegetables-bottom{
+.banner-vegetables-bottom {
   width: 100%;
 }
 .text-containerGray {
@@ -96,4 +97,3 @@
   overflow: hidden;
   height: 232px;
 }
-

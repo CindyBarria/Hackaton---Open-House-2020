@@ -43,6 +43,8 @@ h1 {
 }
 .menu-unimarc {
   width: 100%;
+  position: fixed;
+  z-index: 5;
 }
 .footer-img {
   width: 100%;

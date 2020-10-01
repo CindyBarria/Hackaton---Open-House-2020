@@ -33,7 +33,7 @@ const Category = () => {
       <img
         src={CategoriasBannerSuperior}
         alt=""
-        style={{ marginTop: "-1px" }}
+        style={{ marginTop: "56px" }}
         className="banner-vegetables-top"
       />
 
@@ -41,7 +41,12 @@ const Category = () => {
         Ricas<br></br> recetas
       </h1>
 
-      <img src={Buscador} alt="" style={{ margin: "6%" }} className="search-img" />
+      <img
+        src={Buscador}
+        alt=""
+        style={{ margin: "6%" }}
+        className="search-img"
+      />
 
       <h1 className="categoryTittle">Categorías</h1>
 
