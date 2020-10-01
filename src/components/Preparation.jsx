@@ -14,7 +14,6 @@ import Add from "../assets/agregar.png";
 import ArrowDown from "../assets/arrow-down.png";
 import ReactPlayer from "react-player";
 import Counter from "./counter";
-import Collapse from "react-bootstrap/Collapse";
 import Carrusel from "./Carrusel";
 import Modal from "react-bootstrap/Modal";
 
