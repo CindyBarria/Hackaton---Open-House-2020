@@ -1,9 +1,11 @@
 import React from "react";
 import Buscador from "../assets/Buscador.png";
-function Search() {
+import '../styles/Search.css';
+
+const Search = () => {
   return (
-    <div>
-      <img src={Buscador} alt="" style={{ margin: "-1% 0% 0% 5%" }} />
+    <div className="search-component">
+      <img src={Buscador} alt="" className="search-img"/>
     </div>
   );
 }

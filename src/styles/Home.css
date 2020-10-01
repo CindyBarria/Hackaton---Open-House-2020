@@ -7,12 +7,20 @@
   justify-content: center;
   align-items: center;
 }
+.banner-vegetables-top {
+  width: 100%;
+}
 .title-home {
   color: #0093ad;
   padding: 7%;
   font-size: 35px;
   font-weight: bold;
+  text-transform: uppercase;
 }
+.search-img {
+  width: 306px;
+}
+
 .recipes-containerhome {
   width: 82%;
   display: flex;
@@ -42,7 +50,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 4% 0% 4% 0%;
+  margin: 13px 0% 26px 0%;
+}
+.banner-vegetables-bottom{
+  width: 100%;
 }
 .text-containerGray {
   background: #525759;
@@ -70,7 +81,9 @@
 
 .react-player-wrapper {
   position: relative;
-  padding: 0% 10% 0% 10%;
+  display: flex;
+  justify-content: center;
+  /* padding: 0% 10% 0% 10%; */
   box-sizing: border-box;
   width: 100%;
   height: 37vh;
@@ -81,9 +94,6 @@
   top: 0;
   border-radius: 20px;
   overflow: hidden;
-  margin-left: -3%;
+  height: 232px;
 }
 
-.banner-verdura-home {
-  width: 100%;
-}
