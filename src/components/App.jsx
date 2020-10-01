@@ -6,7 +6,7 @@ import Preparation from "./Preparation";
 import Recipes from "./Recipes";
 import "../styles/App.css";
 import ProductProvider from "../context/ProductProvider";
-import MenuHeader from "../assets/Menu.png";
+import MenuHeader from "../assets/1_banner-verduras-superior.png";
 import Footer from "../assets/footer.png";
 import SpecificDiet from "../components/filters/SpecificDiet";
 import ButtonFindHere from "./ButtonFindHere";
@@ -23,7 +23,7 @@ const App = () => {
     <div>
       <Router>
         <Link to="/">
-          <img src={MenuHeader} alt="" />
+          <img src={MenuHeader} alt=""  className="banner-verdura-home"/>
         </Link>
         <ScrollToTop />
         <Switch>

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import bannerSuperior from "../assets/BannerSuperior.png";
+import bannerSuperior from "../assets/1_banner-verduras-superior.png";
 import flecha from "../assets/Vector.png";
 import "../styles/Recipes.css";
 
