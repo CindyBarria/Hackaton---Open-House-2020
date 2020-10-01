@@ -1,4 +1,4 @@
-# Sección recetas Unimarc
+# Recetas Unimarc
 
   
 
@@ -8,16 +8,22 @@
  [1.Introducción](#1-introduccion)
 
 [2. Producto](#2-producto)
-*  ##### 2.1 Definición del producto
-* ##### 2.2 Principales usuarios
-* ##### 2.3 Uso y aplicación
+*  ##### 2.1 Propuesta
+* ##### 2.2 Producto
+* ##### 2.3 Usuario
 * ##### 2.4 Historias de usuario
 
- [3. Proceso creativo](#3-imagen-final-del-producto)
+ [3. Proceso de creación](#3-proceso-de-creacion)
+* #####  3.1 Diagrama de flujo: Estructura
+* #####   3.2 Miro: BrainStorming
+* #### 3.3 Figma: Prototipo de alta fidelidad
+* #### 3.4 Figma: Guía de estilos
 
- [4. Organización y planificación](#6-organizacion-y-planificacion)
+ [4. Testeo de usabilidad](#4-testeo-de-usabilidad)
+ 
+ [5. Organización y planificación](#5-organizacion-y-planificacion)
 
-  [5. Objetivos de aprendizaje](#5-obejtivos-de-aprendizaje)
+  [6. Producto terminado](#6-productor-terminado)
 
 ## 1. Introducción
 
@@ -38,6 +44,7 @@ Esta sección de recetas es un producto que nos permite personalizar la experien
 También nos encargamos que tenga identidad visual mediante colores específicos para cada categoría de cocina, iconografía e imágenes.
 Nuestro producto está hecho en base al concepto de “Mobile First”, ya que hoy en día el 87% de la población utiliza un smartphone para acceder a internet.
 
+![diagrama](http://imgfz.com/i/Zn4YBcR.jpeg)
 *  #### 2.3  USUARIO:
 Tomando este desafío en cuenta, realizamos una investigación mediante encuestas con usuarios conocedores y clientes de Unimarc tanto como los que no eran tan asiduos a el. 
 En la encuesta pudimos descubrir a nuestra usuaria:
@@ -85,8 +92,17 @@ Nuestro proceso de creación tuvo varias fases y usamos distintas herramientas p
 *  #### 3.3 Figma: Prototipo de alta fidelidad
 * ![Figma](http://imgfz.com/i/z2gsrZj.png)
 
+*  #### 3.4 Figma: Guía de estilos
+* ![Figma](http://imgfz.com/i/mUyAF2l.png)
 
-## 4. Organización y planificación:
+## 4. Testeo de usabilidad:
+Nuestra aplicación fue testeada mediante Maze, con usuarios para ver su usabilidad en tiempo real.
+
+![Resultado general](http://imgfz.com/i/UqJ5x1t.png)
+![Maze -resultados específicos](http://imgfz.com/i/thnus83.png)
+![Comentarios](http://imgfz.com/i/6yUu5iz.png)
+
+## 5. Organización y planificación:
 
 - Nuestro equipo se planifico con distintas herramientas de trabajo tales como Trello.
 - ![trello](http://imgfz.com/i/5RsuOpY.png)  
@@ -94,4 +110,5 @@ Nuestro proceso de creación tuvo varias fases y usamos distintas herramientas p
 ## 5. Producto terminado:
 Te invitamos a darle un vistazo a nuestro producto final, te dejamos el enlace para que puedas navegar y escoger una deliciosa receta!
 
-![Link Profucto final]()
+Haz click aquí!
+[App Sección recetas Unimarc](https://unimarc-recetas-3f5c7.web.app/)
