@@ -9,8 +9,8 @@ const RecipesCategoryTitle = () => {
     <div className="container-title-recipes">
       {todasRecetas.map((product) =>
         product.filtered === true ? (
-          <Fragment>
-            <h1 className="title-recipes" key={product.id}>
+          <Fragment key={product.id}>
+            <h1 className="title-recipes" >
               {product.title}
             </h1>
           </Fragment>

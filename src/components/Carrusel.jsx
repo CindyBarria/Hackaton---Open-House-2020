@@ -6,7 +6,6 @@ import Canela from "../assets/5_canela-gourmet.png";
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../styles/Carrusel.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Carrusel = () => {
   const [index, setIndex] = useState(0);
