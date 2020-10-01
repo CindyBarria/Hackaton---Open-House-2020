@@ -113,10 +113,10 @@ const Preparation = () => {
               </div>
               <div className="container-button-buy">
                 <button className="add">
-                  <p> Agregar al Carro</p>
+                  <p style={{ marginBottom: "0rem" }}> Agregar al Carro</p>
                 </button>
                 <button className="buy">
-                  <p>Comprar</p>
+                  <p style={{ marginBottom: "0rem" }}>Comprar</p>
                 </button>
               </div>
               <div className="container-nutritional">
