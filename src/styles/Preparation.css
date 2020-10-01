@@ -185,6 +185,8 @@ span.minuts {
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
+  color: #ce7da6;
+  font-weight: bold;
 }
 .container-nutritional {
   background: #f2f2f2;
@@ -235,4 +237,13 @@ li:before {
 }
 .container-preparation {
   margin-top: 12%;
+}
+.img-nutritional {
+  width: 110%;
+  height: 75vh;
+  margin: -10% 0% -6% -5%;
+}
+.button-click {
+  background: none;
+  border: none;
 }

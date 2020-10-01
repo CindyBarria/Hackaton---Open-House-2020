@@ -14,11 +14,16 @@ import Add from "../assets/agregar.png";
 import ArrowDown from "../assets/arrow-down.png";
 import ReactPlayer from "react-player";
 import Counter from "./counter";
-import Collapse from 'react-bootstrap/Collapse'
+import Collapse from "react-bootstrap/Collapse";
+import Carrusel from "./Carrusel";
+import Modal from "react-bootstrap/Modal";
 
 const Preparation = () => {
   const { preparacion, setPreparacion } = React.useContext(ProductContext);
-  const [open, setOpen] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   useEffect(() => {
     return () => {
@@ -96,6 +101,7 @@ const Preparation = () => {
                 </div>
               </div>
               <h1 className="ingredients-title">INGREDIENTES</h1>
+              <Carrusel />
               <div className="ingredient-div">
                 {product.ingredients.map((ingredients, i) => (
                   <div className="container-ingredients" key={i}>
@@ -115,27 +121,24 @@ const Preparation = () => {
               </div>
               <div className="container-nutritional">
                 <h1 className="nutritional-title">VALOR NUTRICIONAL</h1>
-                <div>                
-                <button  onClick={() => setOpen(!open)}
-                aria-controls="example-collapse-text"
-                aria-expanded={open}>
-                <h1 className="nutritional-preparation">
-                  {product.nutrititional}
-                  <span className="kcal">KCAL</span>
-                  <img src={ArrowDown} alt="" style={{ padding: "7%" }} />
-                </h1>
+
+                <button className="button-click" onClick={handleShow}>
+                  <h1 className="nutritional-preparation">
+                    {product.nutrititional}
+                    <span className="kcal">KCAL</span>
+                    <img src={ArrowDown} alt="" style={{ padding: "7%" }} />
+                  </h1>
                 </button>
-                <Collapse in={open}>
-             <div id="example-collapse-text">
-          <img src="https://i.ibb.co/1Jrmhdm/Valor-nutricional.png" alt=""/>
-        </div>
-      </Collapse>
-                </div>
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                   </div>
-                  </div>
+                <Modal show={show} onHide={handleClose}>
+                  <Modal.Header closeButton></Modal.Header>
+                  <Modal.Body>
+                    <img
+                      className="img-nutritional"
+                      src="https://i.ibb.co/1Jrmhdm/Valor-nutricional.png"
+                      alt=""
+                    />
+                  </Modal.Body>
+                </Modal>
               </div>
               <div className="container-video">
                 <h1 className="preparation-title">PREPARACIÓN</h1>
