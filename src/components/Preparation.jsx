@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "../styles/Preparation.css";
 import bannerSuperior from "../assets/BannerSuperior.png";
 import bannerInferior from "../assets/BannerInferior.png";
@@ -14,10 +14,11 @@ import Add from "../assets/agregar.png";
 import ArrowDown from "../assets/arrow-down.png";
 import ReactPlayer from "react-player";
 import Counter from "./counter";
-import Carrusel from "./Carrusel";
+import Collapse from 'react-bootstrap/Collapse'
 
 const Preparation = () => {
   const { preparacion, setPreparacion } = React.useContext(ProductContext);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     return () => {
@@ -95,7 +96,6 @@ const Preparation = () => {
                 </div>
               </div>
               <h1 className="ingredients-title">INGREDIENTES</h1>
-              <Carrusel />
               <div className="ingredient-div">
                 {product.ingredients.map((ingredients, i) => (
                   <div className="container-ingredients" key={i}>
@@ -107,19 +107,35 @@ const Preparation = () => {
               </div>
               <div className="container-button-buy">
                 <button className="add">
-                  <p style={{ marginBottom: "0rem" }}> Agregar al Carro</p>
+                  <p> Agregar al Carro</p>
                 </button>
                 <button className="buy">
-                  <p style={{ marginBottom: "0rem" }}>Comprar</p>
+                  <p>Comprar</p>
                 </button>
               </div>
               <div className="container-nutritional">
                 <h1 className="nutritional-title">VALOR NUTRICIONAL</h1>
+                <div>                
+                <button  onClick={() => setOpen(!open)}
+                aria-controls="example-collapse-text"
+                aria-expanded={open}>
                 <h1 className="nutritional-preparation">
                   {product.nutrititional}
                   <span className="kcal">KCAL</span>
                   <img src={ArrowDown} alt="" style={{ padding: "7%" }} />
                 </h1>
+                </button>
+                <Collapse in={open}>
+             <div id="example-collapse-text">
+          <img src="https://i.ibb.co/1Jrmhdm/Valor-nutricional.png" alt=""/>
+        </div>
+      </Collapse>
+                </div>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                   </div>
+                  </div>
               </div>
               <div className="container-video">
                 <h1 className="preparation-title">PREPARACIÓN</h1>
