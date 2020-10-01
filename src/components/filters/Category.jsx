@@ -30,11 +30,11 @@ const Category = () => {
 
   return (
     <div className="categoryContainer">
-      <img
+      {/* <img
         src={CategoriasBannerSuperior}
         alt=""
         style={{ marginTop: "-4px" }}
-      />
+      /> */}
 
       <h1 className="leadTittle">
         Ricas<br></br> recetas

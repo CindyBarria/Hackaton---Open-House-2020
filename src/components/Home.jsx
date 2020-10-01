@@ -12,7 +12,7 @@ import Buscador from "../assets/Buscador.png";
 const Home = () => {
   return (
     <div className="container-home">
-      <img src={BannerSuperiorHome} alt="" style={{ marginTop: "-4px" }} />
+      {/* <img src={BannerSuperiorHome} alt="" style={{ marginTop: "-4px" }} /> */}
       <h1 className="title-home">¡Hola!</h1>
       <img src={Buscador} alt="" style={{ margin: "-1% 0% 7% 0%" }} />
       <div className="recipes-containerhome">
@@ -52,12 +52,12 @@ const Home = () => {
         <img src={Tips} alt="" />
         <h1 className="title-tips">TIPS</h1>
         <p style={{ marginBottom: "4%" }}>
-          Consejos esenaciales y muy útiles para tu día a día
+          Consejos esenciales y muy útiles para tu día a día.
         </p>
         <div className="react-player-wrapper">
           <ReactPlayer
             className="react-player"
-            width={300}
+            width={265}
             height={232}
             url="https://www.youtube.com/watch?v=JoxYdNF_Vr8&feature=emb_title"
             controls={true}
