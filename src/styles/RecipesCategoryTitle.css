@@ -1,0 +1,58 @@
+.title-recipes {
+    color: #ce7da6;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    font-weight: bold;
+  }
+  
+.title-recipes-kids {
+    color: #9B8DC0;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    font-weight: bold;
+}
+
+.title-recipes-chilean {
+    color:  #E56F2D;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    font-weight: bold;
+}
+
+.title-recipes-sides {
+    color:  #473074;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    font-weight: bold;
+}
+
+.title-recipes-principal {
+    color:   #AD4150;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    font-weight: bold;
+}
+.title-recipes-soups{
+    color:   #D5937D;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    font-weight: bold;
+}
