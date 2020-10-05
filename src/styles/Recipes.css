@@ -52,6 +52,76 @@ img.heart {
   letter-spacing: 1px;
   margin-bottom: 0;
 }
+.recipes-name-chilean {
+  background: #E56F2D;
+  width: 77%;
+  margin-top: -14%;
+  height: 8vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.recipes-name-kids{
+  background: #9B8DC0;
+  width: 77%;
+  margin-top: -14%;
+  height: 8vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.recipes-name-sides{
+  background: #473074;
+  width: 77%;
+  margin-top: -14%;
+  height: 8vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.recipes-name-principal{
+  background: #AD4150;
+  width: 77%;
+  margin-top: -14%;
+  height: 8vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+.recipes-name-soups{
+  background: #D5937D;
+  width: 77%;
+  margin-top: -14%;
+  height: 8vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
 
 /*información de dificultad y tiempo por receta*/
 .container-extra-info {
@@ -101,15 +171,6 @@ span.span-minuts {
   align-items: center;
   margin: 4% 0 0;
 }
-.title-recipes {
-  color: #ce7da6;
-  font-style: normal;
-  font-size: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 80%;
-  font-weight: bold;
-}
 
 .title-recipesTwo {
   font-style: normal;
@@ -117,6 +178,56 @@ span.span-minuts {
   font-size: 22px;
   text-align: center;
   color: #ce7da6;
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title-recipesTwo-Chilean {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color:  #E56F2D;
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title-recipesTwo-Kids {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color:  #9B8DC0;
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title-recipesTwo-Sides {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color:  #473074;
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title-recipesTwo-Principal {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color:   #AD4150;
+  padding: 2%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.title-recipesTwo-Soups {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color:   #D5937D;
   padding: 2%;
   text-transform: uppercase;
   font-weight: bold;
